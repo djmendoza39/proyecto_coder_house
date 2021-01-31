@@ -1,47 +1,18 @@
+
+
 /* ------------------------------- seccion carousel -------------------------------------- */
-.contenedor-imagenes-1 {
-  background-image: url(https://tiendadesonrisas.com/wp-content/uploads/2020/03/mochilas-wayuu-colombianas-al-por-mayor-1600x620.jpg);
-  background-repeat: no-repeat repeat;
-  background-size: cover;
-  background-position: center center;
-  position: relative;
-  height: 70vh;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-}
 
-.contenedor-imagenes-2 {
-  background-image: url(https://colombia.travel/sites/default/files/inline-images/xLos-tejidos-Way,PC3,PBAu_-lo-mejor-del-crochet---Cortesia-Mario-Carvajal-www.mariocarvajal.jpg.pagespeed.ic.Je2ROLAKQF.jpg);
-  background-repeat: no-repeat repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 70vh;
-  position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-}
+//slider prueba landing pages
 
-.contenedor-imagenes-3 {
-  background-image: url(https://cdn.trt.net.tr/images//126d/b596/c1ad/5de7a0b7a8f3b.jpg?time=1608735541);
+
+/*.contenedor-imagenes-1 {
+  //background-image: url(https://tiendadesonrisas.com/wp-content/uploads/2020/03/mochilas-wayuu-colombianas-al-por-mayor-1600x620.jpg);
   background-repeat: no-repeat repeat;
   background-size: cover;
   background-position: center center;
-  height: 70vh;
   position: relative;
+  height: 70vh;
+  overflow: hidden;
   &::before {
     content: "";
     position: absolute;
@@ -51,20 +22,29 @@
     right: 0;
     background-color: rgba(0, 0, 0, 0.6);
   }
-}
+
+  
+  
+
+  
+}*/
+
+
+
+
 
 /* --------------------------------------------------------- fin de la seccion del contenedor carousel ---------------------------------------------------- */
 
 /* ----------------------------------------- estilos contenedor grid ------------------------------------------------------ */
 
 .contenedor-galeria {
-  background-color: #160129;
+  background-color: #020103;
   .contenedor__grid {
-    background-color: #421763;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 100px;
-    gap: 10px;
+    background-color: #173863;
+    /*display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 380px;
+    gap: 10px;*/
     margin-bottom: 0;
     padding: 1rem;
     .galeria--imagen {

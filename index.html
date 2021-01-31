@@ -21,10 +21,10 @@
     <main>
 
         <!-- Se aplica la metodologia bem en la seccion del header -->
-        <section class="header  text-white"> <!-- bloque -->
+        <section class="header"> <!-- bloque -->
 
-            <div class=" container">
-                <div class="header__nav"> 
+            
+                <div class="container header__nav"> 
 
                      <div class="header__nav-logo "> <!--elemento -->
         
@@ -32,7 +32,7 @@
         
                     </div>
                     
-                    <nav class="header__nav-menu align-items-center"> <!--elemento --> 
+                    <nav class="header__nav-menu "> <!--elemento --> 
         
                         <a class="header__nav--link active" href="index.html">Inicio</a> 
                         <a class="header__nav--link" href="catalogo.html">Catologo</a> 
@@ -44,13 +44,19 @@
 
                 </div>
     
-            </div>
+           
             
         </section>
 
         <section class="seccion__slider">
       
             <!-- aqui va el slider -->
+            <ul class="seccion__slider-carrusel" >
+                <li><img class="slider-carrusel--img" src="img/imagen-slider-1.jpg" alt="Imagen 1"></li>
+                <li><img class="slider--img" src="img/imagen-slider-2" alt="imagen 2"></li>
+                <li><img class="slider--img" src="img/imagen-slider-3.jpg" alt="imagen 3"></li>
+                
+            </ul>
         
         </section>
         <section class="titulo-responsivo" >
@@ -58,9 +64,9 @@
             <h1 class=" responsivo__titulo1">Nuestro trabajo al alcance de tus manos</h1>      
                    
         </section>
-        
+
         <section class="contenedor-galeria">
-            <div class="container contenedor__grid">
+            <div class=" contenedor__grid">
                 <div class="container-galeria">
                     <img src="img/imagenes-galeria/dunas-taroa-guajira.jpg" alt="la guajira" class="galeria--imagen">
                 </div>
@@ -103,11 +109,11 @@
         </section>
 
         <section class="contenedor-texto-gente">
-            <div class="jumbotron jumbotron-fluid">
-                <div class="container ">
-                    <div class="grid row d-flex p-2 align-items-center">
+            
+                <div class="container">
+                    
 
-                        <div class="titulo-parrafo col-sm-6 .col-md-6 .col-lg-6">
+                        <div class="titulo-parrafo">
                            
                                 <h2 class="titulo1 titulo--efecto">Nuestra Gente</h2>
                         
@@ -118,14 +124,14 @@
                                 geométricas que representan todo aquella que forma parte del diario vivir de los Wayúu.</p>
     
                         </div>
-                        <div class="contenedor-imagen col-sm-6 .col-md-6 .col-lg-6">
-                            <img src="img/wayyu1gif.gif" alt="Gif" class="" width="100%">
+                        <div class="contenedor-imagen">
+                            aqui va una imagen
                         </div>
 
-                    </div>
+                   
                     
                 </div>
-            </div>
+            
         </section>
 
         <!-- metodologia bem -->
@@ -144,53 +150,7 @@
         
         <!------------------------------------------- footer ------------------------------>
          <!-- metodologia bem -->
-        <footer class="footer bg-ligth"><!-- bloque -->
-        
-            <div class="footer__contenedor container d-flex p-2 justify-content-around">  <!-- Elemento -->
-
-                <div class="footer__logo"><!-- Elemento -->
-        
-                    <h6 class="footer__titulo titulo6">Logo</h6><!-- Elemento -->
-                    <p class="footer__texto"><!-- Elemento -->
-                        Inspirados por el amor a Colombia y México D&amp;C Sucesores ha seleccionado sólo la mejor calidad de
-                        artesanías colombianas, explora nuestras galerías y apoya a productores directamente, promoviendo sus
-                        productos en el extranjero.
-                    </p>
-            
-                </div>
-            
-                <div class="footer__contacto"><!-- Elemento -->
-            
-                    <h6 class="footer__titulo titulo6">Contactanos</h6>
-                    <p class="footer__texto">
-                        Si tienes dudas respecto a tus pedidos, comentarios o sugerencias por favor comunícate a:
-                        contacto@dcsucesores.com
-            
-                    </p>
-            
-            
-            
-                </div>
-                <!-- elemento -->
-                <div class="footer__redes"> 
-            
-                    <!-- Esta forma o metodo no es la correspondiente, pero afines de la clase y de practica se realizó en esta seccion footer -->
-                    <h6 class="footer__titulo titulo titulo6">Redes Sociales</h6>
-                   
-                        <a  href="#" class="footer--a"> <i class=" fa fa-whatsapp" style="font-size:30px; color: rgb(35, 141, 35);"></i> </a> <!-- modificadores -->
-                        <a href="#" class="footer--a"> <i class=" fa fa-instagram" style="font-size:30px; color:rgb(120, 5, 165)"></i> </a><!-- modificadores -->
-                        <a href="#" class="footer--a"> <i class=" fa fa-facebook" style="font-size:30px; color:royalblue"></i> </a><!-- modificadores -->
-                </div>
-            
-                
-
-            </div>
-            <div class="footer__final container"> <!--Elemento-->
-            
-                <span class="footer__autor">@derechos reservados de autor</span> <!--Elemento-->
-        
-            </div>
-            
+        <footer class="footer"><!-- bloque -->
         
             
         

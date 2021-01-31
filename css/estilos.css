@@ -1,4 +1,13 @@
 /*Estilos Generales*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1250px; }
+
 .titulo1 {
   font-family: "Arvo", serif; }
 
@@ -26,98 +35,76 @@ li {
 
 /* <----------- cierre de estilos generales----------------- */
 .header {
-  background-color: #FFEFCA !important; }
-  .header .header--nav-titulo {
-    border-radius: .5rem;
-    color: #FFEFCA;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 10px;
-    margin: 0;
-    background: linear-gradient(to bottom, #629E84 0%, #421763 100%);
-    display: inline-block;
-    transform: translate(50%, 0%);
-    font-weight: bold;
-    letter-spacing: -4px;
-    text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff; }
-  .header .header__nav--link {
-    color: black;
-    display: block;
-    font-family: "Libre Baskerville", serif;
-    padding: 1rem;
-    text-decoration: none; }
-    .header .header__nav--link:hover {
-      color: #629E84;
-      background-color: #ffe4a6;
-      border-radius: 1rem; }
-  .header .nav__dropdown-menu {
-    padding: 0px; }
-    .header .nav__dropdown-menu .header__nav--link-submnenu {
-      padding: 0.5rem;
-      font-weight: 600; }
-      .header .nav__dropdown-menu .header__nav--link-submnenu:hover {
-        background-color: #629E84;
-        color: #FFEFCA; }
+  background-color: #FFEFCA; }
+  .header .header__nav {
+    /*display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;*/
+    padding: .5rem; }
+    .header .header__nav .header__nav-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center; }
+    .header .header__nav .header--nav-titulo {
+      border-radius: .5rem;
+      color: #FFEFCA;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 10px;
+      margin: 0;
+      background: linear-gradient(to bottom, #629E84 0%, #421763 100%);
+      display: inline-block;
+      transform: translate(50%, 0%);
+      font-weight: bold;
+      letter-spacing: -4px;
+      text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff; }
+    .header .header__nav .header__nav--link {
+      color: black;
+      display: block;
+      font-family: "Libre Baskerville", serif;
+      padding: 1.5rem;
+      text-decoration: none; }
+      .header .header__nav .header__nav--link:hover {
+        color: #629E84;
+        background-color: #ffe4a6;
+        border-radius: 1rem; }
 
 /* ------------------------------- seccion carousel -------------------------------------- */
-.contenedor-imagenes-1 {
-  background-image: url(https://tiendadesonrisas.com/wp-content/uploads/2020/03/mochilas-wayuu-colombianas-al-por-mayor-1600x620.jpg);
+/*.contenedor-imagenes-1 {
+  //background-image: url(https://tiendadesonrisas.com/wp-content/uploads/2020/03/mochilas-wayuu-colombianas-al-por-mayor-1600x620.jpg);
   background-repeat: no-repeat repeat;
   background-size: cover;
   background-position: center center;
   position: relative;
-  height: 70vh; }
-  .contenedor-imagenes-1::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.6); }
-
-.contenedor-imagenes-2 {
-  background-image: url(https://colombia.travel/sites/default/files/inline-images/xLos-tejidos-Way,PC3,PBAu_-lo-mejor-del-crochet---Cortesia-Mario-Carvajal-www.mariocarvajal.jpg.pagespeed.ic.Je2ROLAKQF.jpg);
-  background-repeat: no-repeat repeat;
-  background-size: cover;
-  background-position: center center;
   height: 70vh;
-  position: relative; }
-  .contenedor-imagenes-2::before {
+  overflow: hidden;
+  &::before {
     content: "";
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.6); }
+    background-color: rgba(0, 0, 0, 0.6);
+  }
 
-.contenedor-imagenes-3 {
-  background-image: url(https://cdn.trt.net.tr/images//126d/b596/c1ad/5de7a0b7a8f3b.jpg?time=1608735541);
-  background-repeat: no-repeat repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 70vh;
-  position: relative; }
-  .contenedor-imagenes-3::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.6); }
+  
+  
 
+  
+}*/
 /* --------------------------------------------------------- fin de la seccion del contenedor carousel ---------------------------------------------------- */
 /* ----------------------------------------- estilos contenedor grid ------------------------------------------------------ */
 .contenedor-galeria {
-  background-color: #d5cedb; }
+  background-color: #020103; }
   .contenedor-galeria .contenedor__grid {
-    background-color: #421763;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 200px;
-    gap: 10px;
+    background-color: #173863;
+    /*display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 380px;
+    gap: 10px;*/
     margin-bottom: 0;
     padding: 1rem; }
     .contenedor-galeria .contenedor__grid .galeria--imagen {

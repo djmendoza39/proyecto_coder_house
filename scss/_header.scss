@@ -1,5 +1,22 @@
-.header {
-    background-color: $primary !important;
+.header{
+  background-color: $primary ;
+
+
+  .header__nav{
+    /*display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;*/
+    padding: .5rem;
+
+    .header__nav-menu{
+  
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+    }
+    
     
     .header--nav-titulo {
       border-radius: .5rem;
@@ -21,7 +38,7 @@
       color: $color-texto;
       display: block;
       font-family: $fontTexto;
-      padding: 1rem;
+      padding: 1.5rem;
       text-decoration: none;
   
       &:hover {
@@ -31,17 +48,8 @@
       }
     }
   
-    .nav__dropdown-menu {
-      padding: 0px;
-  
-      .header__nav--link-submnenu {
-        padding: 0.5rem;
-        font-weight: 600;
-  
-        &:hover {
-          background-color: $terceario;
-          color: $primary;
-        }
-      }
-    }
+    
+
   }
+}
+
