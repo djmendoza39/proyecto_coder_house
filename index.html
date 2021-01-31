@@ -9,10 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
     
     <link rel="stylesheet" href="css/estilos.css">
 </head>
@@ -21,18 +21,18 @@
     <main>
 
         <!-- Se aplica la metodologia bem en la seccion del header -->
-        <section class="header p-3  bg-dark text-white"> <!-- bloque -->
+        <section class="header  text-white"> <!-- bloque -->
 
             <div class=" container">
-                <div class=" row header__nav d-flex p-2 justify-content-around align-items-center"> 
+                <div class="header__nav"> 
 
-                     <div class="header__nav-logo col-lg-6 "> <!--elemento -->
+                     <div class="header__nav-logo "> <!--elemento -->
         
                        <h1 class="titulo1"> <a class="header--nav-titulo" href="index.html">La guaji</a></h1> <!-- modificador -->
         
                     </div>
                     
-                    <nav class="header__nav-menu align-items-center d-flex p-2 justify-content-between col-lg-6 text-rigth"> <!--elemento --> 
+                    <nav class="header__nav-menu align-items-center"> <!--elemento --> 
         
                         <a class="header__nav--link active" href="index.html">Inicio</a> 
                         <a class="header__nav--link" href="catalogo.html">Catologo</a> 
@@ -48,49 +48,17 @@
             
         </section>
 
-        <section class="carousel carousel-inner">
+        <section class="seccion__slider">
       
-            <div id="demo" class="carousel slide " data-ride="carousel">
-                <ul class="carousel-indicators">
-                    <li data-target="#demo" data-slide-to="0" class="active"></li>
-                    <li data-target="#demo" data-slide-to="1"></li>
-                    <li data-target="#demo" data-slide-to="2"></li>
-                </ul>
-        
-                <div class=" contenedor-imagenes-1 carousel-item active">
-                    
-                    <div class="texto carousel-caption">
-                        <h3 class="titulo3">Tejiendo con el alma</h3>
-                        <p>Con mucho amor</p>
-                    </div>
-                </div>
-                <div class=" contenedor-imagenes-2 carousel-item">
-                   
-        
-                    <div class=" texto carousel-caption">
-                        <h3 class="titulo3">Tierra Santa</h3>
-                        <p>Producto del olvido</p>
-                    </div>
-                </div>
-                <div class=" contenedor-imagenes-3 carousel-item ">
-                   
-                    <div class="texto carousel-caption">
-                        <h3 class="titulo3">Gente humilde</h3>
-                        <p>Entregando su arte y su magia</p>
-                    </div>
-                </div>
-                
-            </div>
+            <!-- aqui va el slider -->
         
         </section>
-        <section>
-            <div class="jumbotron jumbotron-fluid text-center">
-                <div class="container">
-                  <h1 class="titulo-responsivo titulo1">Nuestro trabajo al alcance de tus manos</h1>      
-                  
-                </div>
-              </div>
+        <section class="titulo-responsivo" >
+
+            <h1 class=" responsivo__titulo1">Nuestro trabajo al alcance de tus manos</h1>      
+                   
         </section>
+        
         <section class="contenedor-galeria">
             <div class="container contenedor__grid">
                 <div class="container-galeria">

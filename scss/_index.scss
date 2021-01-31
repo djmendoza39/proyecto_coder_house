@@ -58,12 +58,12 @@
 /* ----------------------------------------- estilos contenedor grid ------------------------------------------------------ */
 
 .contenedor-galeria {
-  background-color: #d5cedb;
+  background-color: #160129;
   .contenedor__grid {
     background-color: #421763;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 200px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 100px;
     gap: 10px;
     margin-bottom: 0;
     padding: 1rem;
