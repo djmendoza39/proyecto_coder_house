@@ -1,0 +1,45 @@
+
+//variables
+$fontTitulos: "Arvo", serif;
+$fontTexto: "Libre Baskerville", serif; 
+$primary: #FFEFCA;
+$color-boton: #421763;
+$color-texto: black;
+$terceario: #629E84;
+
+
+
+/*Estilos Generales*/
+@for $i from 1 to 7{
+
+  .titulo#{$i}{
+    font-family: $fontTitulos ;
+  }
+
+}
+
+p{
+  font-family: $fontTexto;
+  font-size: 16px !important;
+}
+
+li {
+  list-style: none;
+}
+/* <----------- cierre de estilos generales----------------- */
+
+
+@import "header";
+@import "index";
+@import "catalogo";
+@import "quienes-somos";
+@import "contactanos";
+@import "footer";
+
+
+
+
+
+
+
+

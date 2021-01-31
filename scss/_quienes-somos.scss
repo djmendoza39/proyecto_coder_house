@@ -1,0 +1,61 @@
+
+/* seccion ----------------------------------------------------- quienes somos */
+.alto-jumbotron-quienes {
+    background-image: url(https://www.colombiatudestino.com/colombia/laguajira/laguajira/images/images7_big.jpg);
+    background-repeat: no-repeat repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 55vh;
+    margin-bottom: 0;
+    position: relative;
+  
+    &::before {
+      background-color: rgba(0, 0, 0, 0.6);
+      content: "";
+      left: 0;
+      bottom: 0;
+      top: 0;
+      right: 0;
+      position: absolute;
+    }
+  
+    h1 {
+      font-size: 3vw;
+      text-transform: capitalize;
+      top: 19vh;
+      position: relative;
+    }
+  }
+  
+  .col-lg-4 {
+    text-align: center;
+    
+  }
+  .row__margin{
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
+  
+  .col-lg-4 img {
+    object-position: center center;
+    object-fit: cover;
+  }
+  
+  .img-objetivos img {
+    object-fit: cover;
+    object-position: center center;
+  }
+  
+  
+  //seccion contacto
+  .contacto--boton {
+    border: none;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 10%;
+    &:hover {
+      background-color: #f6ac6f;
+      color: #e9ecef;
+      font-weight: 500;
+    }
+  }

@@ -1,0 +1,47 @@
+.header {
+    background-color: $primary !important;
+    
+    .header--nav-titulo {
+      border-radius: .5rem;
+      color: $primary;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 10px;
+      margin: 0;
+      background: linear-gradient(to bottom, $terceario 0%, $color-boton 100%);
+      display: inline-block;
+      transform: translate(50%,0%);  //transform
+      font-weight: bold;
+      letter-spacing: -4px;
+      text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;
+    }
+    
+    .header__nav--link {
+      
+      color: $color-texto;
+      display: block;
+      font-family: $fontTexto;
+      padding: 1rem;
+      text-decoration: none;
+  
+      &:hover {
+        color: $terceario;
+        background-color: darken($primary, 7);
+        border-radius: 1rem;
+      }
+    }
+  
+    .nav__dropdown-menu {
+      padding: 0px;
+  
+      .header__nav--link-submnenu {
+        padding: 0.5rem;
+        font-weight: 600;
+  
+        &:hover {
+          background-color: $terceario;
+          color: $primary;
+        }
+      }
+    }
+  }

@@ -1,0 +1,26 @@
+
+.footer {
+    //background-image: linear-gradient(to right, $primary, #95BCAB);
+    background-color: $primary;
+    height: 30vh;
+    
+  
+    .footer__logo,
+    .footer__contacto,
+    .footer__redes {
+      color: $color-texto;
+    }
+  
+    .footer__titulo {
+      margin-top: 2rem;
+    }
+  
+    .footer__final {
+      text-align: center;
+  
+      .footer__autor {
+        color: $color-texto;
+        font-size: 0.5rem;
+      }
+    }
+  }

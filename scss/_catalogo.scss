@@ -1,0 +1,61 @@
+    
+    /* --------------------------------------------- seccion catalogo ----------------------------------------- */
+    .alto-jumbotron {
+        align-items: center;
+        background-image: url(https://colombia.travel/sites/default/files/inline-images/xLos-tejidos-Way,PC3,PBAu_-lo-mejor-del-crochet---Cortesia-Mario-Carvajal-www.mariocarvajal.jpg.pagespeed.ic.Je2ROLAKQF.jpg);
+        background-repeat: no-repeat repeat;
+        background-size: cover;
+        background-position: center center;
+        display: flex;
+        height: 55vh;
+        justify-content: center;
+        margin-bottom: 0;
+        position: relative;
+      
+        &::before {
+          background-color: rgba(0, 0, 0, 0.6);
+          bottom: 0;
+          content: "";
+          left: 0;
+          right: 0;
+          top: 0;
+          position: absolute;
+        }
+        
+          .alto-jumbotrom__container--titulo,
+          .alto-jumbotrom__container--parrafo,
+          .alto-jumbotrom__container--boton {
+            font-weight: 500;
+            position: relative;
+          }
+      
+        
+      }
+      
+      .coleccion-card--img {
+        height: 300px;
+        object-fit: cover;
+        object-position: center center;
+        &:hover{
+          transition:all .3s ease-in-out;  //transition
+          background-color: $primary;
+          filter: opacity(.9);
+      
+      
+        }
+      }
+      .btn--llamanos{
+        background-color: #623A80;
+        border:none;
+        &:hover{
+          background-color: $color-boton;
+        }
+      }
+      .btn--boton{
+       background-color: $color-boton ;
+       color: $primary;
+        &:hover{
+          background-color: $terceario;
+        }
+      }
+      
