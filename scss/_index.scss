@@ -2,32 +2,79 @@
 
 /* ------------------------------- seccion carousel -------------------------------------- */
 
-//slider prueba landing pages
+.seccion__slider{
+  height: 75vh;
+ 
+  
+  .contenedor-slider{
+    position: relative;
+    
+    .contenedor__slider-carrusel{
+      background-color: #ccc;
 
+      .slider-carrusel-li{
+        left: 0;
+        right: 0;
+        transition: opacity .5s;
+        top: 0;
+        opacity: 0;
+        position: absolute;
 
-/*.contenedor-imagenes-1 {
-  //background-image: url(https://tiendadesonrisas.com/wp-content/uploads/2020/03/mochilas-wayuu-colombianas-al-por-mayor-1600x620.jpg);
-  background-repeat: no-repeat repeat;
-  background-size: cover;
-  background-position: center center;
-  position: relative;
-  height: 70vh;
-  overflow: hidden;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+        &:first-child{
+          opacity: 1;
+        }
+
+        &:target{
+          opacity: 1;
+        }
+
+        
+      }
+    
+      .slider-carrusel--img{
+        height: 75vh;
+        object-fit: cover;
+        width: 100%;
+        
+  
+      }
+  
+    }
+
+    .slider-carrusel__navegacion{
+
+      display: flex;
+      height: inherit;
+      justify-content: center;
+      align-items: flex-end;
+      
+      .navegacion__li{
+        padding: .3rem;
+        & > a{
+          display: block;
+          background-color: rgba(241, 235, 235, 0.739);
+          border-radius: 100%;
+          color: #173863;
+          cursor: pointer;
+          font-size: 18px;
+          height: 30px;
+          text-decoration: none;
+          text-align: center;
+          padding: .4rem;
+          position: relative;
+          width: 30px;
+          z-index: 10;
+        }
+
+      }
+    }
+
   }
 
-  
-  
 
-  
-}*/
+
+}
+
 
 
 
@@ -38,39 +85,57 @@
 /* ----------------------------------------- estilos contenedor grid ------------------------------------------------------ */
 
 .contenedor-galeria {
-  background-color: #020103;
+  .container__galeria{
+    padding: .5rem;
+    border: solid 1px $primary;
+    
+    margin-top: 1rem;
+  }
   .contenedor__grid {
-    background-color: #173863;
+    
     /*display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 380px;
     gap: 10px;*/
-    margin-bottom: 0;
+    
     padding: 1rem;
     .galeria--imagen {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      padding: .8rem;
+      
     }
   }
 }
 
 /*  ------------ aqui terminan los estilos de grid ------------------- */
-.jumbotron {
-  background-color: aliceblue !important;
-  margin-bottom: 0;
+
 
   .titulo-responsivo {
-    font-size: 3vw;
-    margin-bottom: 2rem;
-    text-shadow: 0 8px 9px $terceario, 0px -2px 1px;
+    font-size: 18px;
+    margin: 1.5rem 0px;
+    padding: 1rem;
+    text-align: center;
+    //text-shadow: 0 8px 9px $terceario, 0px -2px 1px;
   }
   
-  .titulo--efecto {
-    color: $terceario;
-    font-weight: 600;
+
+  .contenedor-texto-gente{
+    padding: 1rem;
+    margin-bottom: 4rem;
+    .titulo-parrafo__titulo1 {
+      text-align: center;
+      margin-bottom: 1rem;
+      
+    }
+
+    .texto-gente__parrafo{
+      text-align: justify;
+    }
+
   }
-}
+
 
 .section-figura {
   background-image: url(https://www.eltiempo.com/uploads/2018/01/26/5a6bcf8f5f050.jpeg);
@@ -78,9 +143,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  margin-top: -2rem;
   height: 80vh;
+  margin-top: -2rem;
 }
+
 .section-figura__titulo {
   cursor: default;
   height: 100px;
@@ -88,10 +154,10 @@
   display: block;
   animation: texto 0.3s ease infinite alternate;  //animation
   font-family: $fontTexto;
-  font-size: 80px;
+  font-size: 50px;
   color: #fff;
   text-align: center;
-  line-height: 100px;
+  line-height: 400px;
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
     0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
     0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.6);

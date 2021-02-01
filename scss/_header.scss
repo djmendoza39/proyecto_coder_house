@@ -3,34 +3,44 @@
 
 
   .header__nav{
-    /*display: flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;*/
-    padding: .5rem;
+    align-items: center;
+    
+    .menu__bars{
+      background-color: $terceario;
+      margin-right: 1rem;
+      * > i{
 
-    .header__nav-menu{
+        font-size: 1.5rem;
+        padding: .5rem;
+        color: aliceblue;
+
+      }
+    }
+    /*.header__nav-menu{
   
-      display: flex;
+      display: none;
       flex-direction: column;
       justify-content: space-between;
       text-align: center;
-    }
+    }*/
     
     
     .header--nav-titulo {
-      border-radius: .5rem;
+     
       color: $primary;
       text-decoration: none;
       text-transform: uppercase;
       padding: 10px;
       margin: 0;
-      background: linear-gradient(to bottom, $terceario 0%, $color-boton 100%);
+      
       display: inline-block;
-      transform: translate(50%,0%);  //transform
+      
       font-weight: bold;
       letter-spacing: -4px;
-      text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;
+      text-shadow: 0 8px 9px #d8bd95, 0px -2px 1px #176294;
     }
     
     .header__nav--link {
