@@ -19,13 +19,8 @@
 
       }
     }
-    /*.header__nav-menu{
-  
-      display: none;
-      flex-direction: column;
-      justify-content: space-between;
-      text-align: center;
-    }*/
+
+    
     
     
     .header--nav-titulo {
@@ -57,9 +52,28 @@
         border-radius: 1rem;
       }
     }
-  
-    
 
   }
+}
+
+@media screen and (min-width: 960px){
+  .menu__bars{
+    display: none;
+  }
+  .header__nav-menu{
+
+    .nav-menu__none{
+      display: flex;
+    }
+  
+  }
+}
+
+@media screen and (max-width: 960px){
+
+  .header__nav-menu{
+    display: none;
+  }
+
 }
 
