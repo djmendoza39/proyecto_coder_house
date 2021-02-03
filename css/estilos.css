@@ -144,53 +144,67 @@ li {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 380px;
-    gap: 10px; } }
+    gap: 10px; }
+  .texto__imagen-flex {
+    flex-direction: column; } }
 
-@media screen and (min-width: 470px) and (min-width: 470px) {
+@media screen and (min-width: 470px) {
   .contenedor__grid {
     grid-template-columns: repeat(3, 1fr); } }
 
-@media screen and (min-width: 470px) {
-  /*  ------------ aqui terminan los estilos de grid ------------------- */
-  .titulo-responsivo {
-    font-size: 18px;
-    margin: 1.5rem 0px;
-    padding: 1rem;
-    text-align: center; }
-  .contenedor-texto-gente {
-    padding: 1rem;
-    margin-bottom: 4rem; }
-    .contenedor-texto-gente .titulo-parrafo__titulo1 {
-      text-align: center;
-      margin-bottom: 1rem; }
-    .contenedor-texto-gente .texto-gente__parrafo {
-      text-align: justify; }
-  .section-figura {
-    background-image: url(https://www.eltiempo.com/uploads/2018/01/26/5a6bcf8f5f050.jpeg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 80vh;
-    margin-top: -2rem; }
-  .section-figura__titulo {
-    cursor: default;
-    height: 100px;
-    margin: auto;
-    display: block;
-    animation: texto 0.3s ease infinite alternate;
-    font-family: "Libre Baskerville", serif;
-    font-size: 50px;
-    color: #fff;
-    text-align: center;
-    line-height: 400px;
-    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.6); }
-  @keyframes texto {
-    100% {
-      top: -30px;
-      text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc, 0 30px 30px rgba(0, 0, 0, 0.3); } } }
+/*  ------------ aqui terminan los estilos de grid ------------------- */
+.titulo-responsivo {
+  font-size: 20px;
+  margin: 1.5rem 0px;
+  padding: 1rem;
+  text-align: center; }
 
-@media screen and (min-width: 470px) and (min-width: 460px) {
+.contenedor-texto-gente {
+  height: auto;
+  box-shadow: -5px -4px 7px 0px rgba(0, 0, 0, 0.24);
+  border-top-left-radius: 4rem;
+  margin-top: 3rem;
+  align-items: center; }
+  .contenedor-texto-gente .container .texto-gente__titulo-parrafo {
+    text-align: center;
+    padding: 1rem; }
+    .contenedor-texto-gente .container .texto-gente__titulo-parrafo * {
+      margin-top: 1.5rem; }
+  .contenedor-texto-gente .container .contenedor-imagen {
+    padding: 1.5rem; }
+    .contenedor-texto-gente .container .contenedor-imagen .imagen--texto {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 1rem; }
+
+.section-figura {
+  background-image: url(https://www.eltiempo.com/uploads/2018/01/26/5a6bcf8f5f050.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 80vh; }
+
+.section-figura__titulo {
+  cursor: default;
+  height: 100px;
+  margin: auto;
+  display: block;
+  animation: texto 0.3s ease infinite alternate;
+  font-family: "Libre Baskerville", serif;
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  line-height: 400px;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.6); }
+
+@keyframes texto {
+  100% {
+    top: -30px;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc, 0 30px 30px rgba(0, 0, 0, 0.3); } }
+
+@media screen and (min-width: 460px) {
   .contenedor__grid {
     grid-template-columns: repeat(2, 1fr); }
     .contenedor__grid .container__galeria:nth-child(3) {
@@ -199,7 +213,7 @@ li {
     .contenedor__grid .container__galeria:nth-child(5) {
       grid-row-start: span 2; } }
 
-@media screen and (min-width: 470px) and (min-width: 680px) {
+@media screen and (min-width: 680px) {
   .contenedor__grid .container__galeria:nth-child(3) {
     grid-row-start: span 1;
     grid-column-start: span 1; }
