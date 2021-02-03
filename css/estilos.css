@@ -152,9 +152,8 @@ li {
   .contenedor__grid {
     grid-template-columns: repeat(3, 1fr); } }
 
-/*  ------------ aqui terminan los estilos de grid ------------------- */
 .titulo-responsivo {
-  font-size: 20px;
+  font-size: 40px;
   margin: 1.5rem 0px;
   padding: 1rem;
   text-align: center; }
