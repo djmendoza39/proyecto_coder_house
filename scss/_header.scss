@@ -20,6 +20,10 @@
       }
     }
 
+    .titulo1{
+      font-size: 40px;
+    }
+
     
     
     
@@ -47,9 +51,8 @@
       text-decoration: none;
   
       &:hover {
-        color: $terceario;
-        background-color: darken($primary, 7);
-        border-radius: 1rem;
+        color: #176294;
+        
       }
     }
 

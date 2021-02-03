@@ -19,31 +19,34 @@
 
     <main>
         <!------------------------------ seccion header -------------------------->
-        <section class="header p-3  bg-dark text-white"> <!-- bloque -->
+        <section class="header"> <!-- bloque -->
 
-            <div class=" container">
-                <div class=" row header__nav d-flex p-2 justify-content-around align-items-center"> 
-
-                     <div class="header__nav-logo col-lg-6 "> <!--elemento -->
-        
-                       <h1 class="titulo1"> <a class="header--nav-titulo" href="index.html">La guaji</a></h1> <!-- modificador -->
-        
-                    </div>
-                    
-                    <nav class="header__nav-menu align-items-center d-flex p-2 justify-content-between col-lg-6 text-rigth"> <!--elemento --> 
-        
-                        <a class="header__nav--link active" href="index.html">Inicio</a> 
-                        <a class="header__nav--link" href="catalogo.html">Catologo</a> 
-                        <a class="header__nav--link" href="quienes-somos.html">Quienes somos</a> 
-                        <a class="header__nav--link" href="contactanos.html">Contactanos</a>
-        
-                    </nav>
-
-                </div>
-    
-            </div>
             
-        </section>
+            <div class="header__nav container"> 
+
+                 <div class="header__nav-logo "> <!--elemento -->
+    
+                   <h1 class="titulo1"> <a class="header--nav-titulo" href="index.html">La guaji</a></h1> <!-- modificador -->
+    
+                </div>
+                <div class="menu__bars">
+                    <a href=""><i class="fa fa-bars"></i></a> 
+                </div>
+                
+                 <nav class="header__nav-menu"> 
+                    <div class="nav-menu__none">
+                        <a class="header__nav--link active" href="index.html">Inicio</a>
+                        <a class="header__nav--link" href="catalogo.html">Catologo</a>
+                        <a class="header__nav--link" href="catalogo.html">Quienes somos</a>
+                        <a class="header__nav--link" href="contactanos.html">Contactanos</a>
+                    </div>
+                </nav>
+
+            </div>
+
+       
+        
+    </section>
         
         <section class="jumbotron text-center alto-jumbotron">
             <div class="alto-jumbotrom__container container">
@@ -232,54 +235,27 @@
         
         
         <!------------------------------------------- footer ------------------------------>
-        <footer class="footer bg-ligth">
+         
+         <footer class="footer"><!-- bloque -->
         
-            <div class="footer__contenedor container d-flex p-2 justify-content-around">  
-
-                <div class="footer__logo">
-        
-                    <h6 class="footer__titulo titulo6">Logo</h6>
-                    <p class="footer__texto">
-                        Inspirados por el amor a Colombia y México D&amp;C Sucesores ha seleccionado sólo la mejor calidad de
-                        artesanías colombianas, explora nuestras galerías y apoya a productores directamente, promoviendo sus
-                        productos en el extranjero.
-                    </p>
-            
+            <div class="contenedor-footer">
+                <div class="footer__elementos-titulo">
+                    <h3> Síguenos tambien aquí </h3>
                 </div>
-            
-                <div class="footer__contacto">
-            
-                    <h6 class="footer__titulo titulo6">Contactanos</h6>
-                    <p class="footer__texto">
-                        Si tienes dudas respecto a tus pedidos, comentarios o sugerencias por favor comunícate a:
-                        contacto@dcsucesores.com
-            
-                    </p>
-            
-            
-            
+                <div class="footer__elementos-redes">
+                    <ul class="footer__elementos-li">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                    </ul>
                 </div>
-            
-                <div class="footer__redes">
-            
-                    <!-- Esta forma o metodo no es la correspondiente, pero afines de la clase y de practica se realizó en esta seccion footer -->
-                    <h6 class="footer__titulo titulo6">Redes Sociales</h6>
-                   
-                            <a  href="#" class="footer__a"> <i class=" fa fa-whatsapp" style="font-size:30px; color: rgb(35, 141, 35);"></i> </a>
-                            <a href="#" class="footer__a"> <i class=" fa fa-instagram" style="font-size:30px; color:rgb(120, 5, 165)"></i> </a>
-                            <a href="#" class="footer__a"> <i class=" fa fa-facebook" style="font-size:30px; color:royalblue"></i> </a>
+                <div class="footer__elementos">
+                    <span>CopyRight&#169laGuaji - 2021 aviso legal, politica de privacidad <br> Web diseñada  con HTML y CSS3</span>    
                 </div>
-            
                 
-
             </div>
-            <div class="footer__final container">
-            
-                <span class="footer__autor">@derechos reservados de autor</span>
-        
-            </div>
-            
-        
             
         
         </footer>
