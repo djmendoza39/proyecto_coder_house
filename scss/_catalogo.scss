@@ -6,8 +6,9 @@
         background-repeat: no-repeat repeat;
         background-size: cover;
         background-position: center center;
+        background-attachment: fixed;
         display: flex;
-        height: 55vh;
+        height: 75vh;
         justify-content: center;
         margin-bottom: 0;
         position: relative;
@@ -32,18 +33,7 @@
         
       }
       
-      .coleccion-card--img {
-        height: 300px;
-        object-fit: cover;
-        object-position: center center;
-        &:hover{
-          transition:all .3s ease-in-out;  //transition
-          background-color: $primary;
-          filter: opacity(.9);
       
-      
-        }
-      }
       .btn--llamanos{
         background-color: #623A80;
         border:none;
@@ -59,3 +49,50 @@
         }
       }
       
+
+      //seccion catalogo card
+      .section-galeria{
+        padding: 1.5rem;
+        .galeria__card{
+
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: 340px 340px 340px;
+          gap: 1rem;
+
+          .card-imagenes:nth-child(1){
+            grid-row: 1 / 3;
+          }
+          .card-imagenes:nth-child(3){
+            grid-column: 3 / 5;
+            
+          }
+          .card-imagenes:nth-child(4){
+            grid-column: 3 / 5;
+            grid-row: 3 / 4;
+          }
+          .card-imagenes:nth-child(5){
+            grid-row: 3 / 4;
+          }
+
+          .card-imagenes:nth-child(6){
+            grid-column: 2 / 3;
+            grid-row: 2 / 4;
+          }
+
+
+
+        }
+
+        .card--imagen{
+
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: .6rem;
+          
+        }
+
+
+
+      }
