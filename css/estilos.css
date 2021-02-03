@@ -1,4 +1,13 @@
 /*Estilos Generales*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1250px; }
+
 .titulo1 {
   font-family: "Arvo", serif; }
 
@@ -26,116 +35,147 @@ li {
 
 /* <----------- cierre de estilos generales----------------- */
 .header {
-  background-color: #FFEFCA !important; }
-  .header .header--nav-titulo {
-    border-radius: .5rem;
-    color: #FFEFCA;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 10px;
-    margin: 0;
-    background: linear-gradient(to bottom, #629E84 0%, #421763 100%);
-    display: inline-block;
-    transform: translate(50%, 0%);
-    font-weight: bold;
-    letter-spacing: -4px;
-    text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff; }
-  .header .header__nav--link {
-    color: black;
-    display: block;
-    font-family: "Libre Baskerville", serif;
-    padding: 1rem;
-    text-decoration: none; }
-    .header .header__nav--link:hover {
-      color: #629E84;
-      background-color: #ffe4a6;
-      border-radius: 1rem; }
-  .header .nav__dropdown-menu {
-    padding: 0px; }
-    .header .nav__dropdown-menu .header__nav--link-submnenu {
-      padding: 0.5rem;
-      font-weight: 600; }
-      .header .nav__dropdown-menu .header__nav--link-submnenu:hover {
-        background-color: #629E84;
-        color: #FFEFCA; }
+  background-color: #FFEFCA; }
+  .header .header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .header .header__nav .menu__bars {
+      background-color: #629E84;
+      margin-right: 1rem; }
+      .header .header__nav .menu__bars * > i {
+        font-size: 1.5rem;
+        padding: .5rem;
+        color: aliceblue; }
+    .header .header__nav .titulo1 {
+      font-size: 40px; }
+    .header .header__nav .header--nav-titulo {
+      color: #FFEFCA;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 10px;
+      margin: 0;
+      display: inline-block;
+      font-weight: bold;
+      letter-spacing: -4px;
+      text-shadow: 0 8px 9px #d8bd95, 0px -2px 1px #176294; }
+    .header .header__nav .header__nav--link {
+      color: black;
+      display: block;
+      font-family: "Libre Baskerville", serif;
+      padding: 1.5rem;
+      text-decoration: none; }
+      .header .header__nav .header__nav--link:hover {
+        color: #176294; }
+
+@media screen and (min-width: 960px) {
+  .menu__bars {
+    display: none; }
+  .header__nav-menu .nav-menu__none {
+    display: flex; } }
+
+@media screen and (max-width: 960px) {
+  .header__nav-menu {
+    display: none; } }
 
 /* ------------------------------- seccion carousel -------------------------------------- */
-.contenedor-imagenes-1 {
-  background-image: url(https://tiendadesonrisas.com/wp-content/uploads/2020/03/mochilas-wayuu-colombianas-al-por-mayor-1600x620.jpg);
-  background-repeat: no-repeat repeat;
-  background-size: cover;
-  background-position: center center;
-  position: relative;
-  height: 70vh; }
-  .contenedor-imagenes-1::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.6); }
-
-.contenedor-imagenes-2 {
-  background-image: url(https://colombia.travel/sites/default/files/inline-images/xLos-tejidos-Way,PC3,PBAu_-lo-mejor-del-crochet---Cortesia-Mario-Carvajal-www.mariocarvajal.jpg.pagespeed.ic.Je2ROLAKQF.jpg);
-  background-repeat: no-repeat repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 70vh;
-  position: relative; }
-  .contenedor-imagenes-2::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.6); }
-
-.contenedor-imagenes-3 {
-  background-image: url(https://cdn.trt.net.tr/images//126d/b596/c1ad/5de7a0b7a8f3b.jpg?time=1608735541);
-  background-repeat: no-repeat repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 70vh;
-  position: relative; }
-  .contenedor-imagenes-3::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.6); }
+.seccion__slider {
+  height: 75vh; }
+  .seccion__slider .contenedor-slider {
+    position: relative; }
+    .seccion__slider .contenedor-slider .contenedor__slider-carrusel {
+      background-color: #ccc; }
+      .seccion__slider .contenedor-slider .contenedor__slider-carrusel .slider-carrusel-li {
+        left: 0;
+        right: 0;
+        transition: opacity .5s;
+        top: 0;
+        opacity: 0;
+        position: absolute; }
+        .seccion__slider .contenedor-slider .contenedor__slider-carrusel .slider-carrusel-li:first-child {
+          opacity: 1; }
+        .seccion__slider .contenedor-slider .contenedor__slider-carrusel .slider-carrusel-li:target {
+          opacity: 1; }
+      .seccion__slider .contenedor-slider .contenedor__slider-carrusel .slider-carrusel--img {
+        height: 75vh;
+        object-fit: cover;
+        width: 100%; }
+    .seccion__slider .contenedor-slider .slider-carrusel__navegacion {
+      display: flex;
+      height: inherit;
+      justify-content: center;
+      align-items: flex-end; }
+      .seccion__slider .contenedor-slider .slider-carrusel__navegacion .navegacion__li {
+        padding: .3rem; }
+        .seccion__slider .contenedor-slider .slider-carrusel__navegacion .navegacion__li > a {
+          display: block;
+          background-color: rgba(241, 235, 235, 0.739);
+          border-radius: 100%;
+          color: #173863;
+          cursor: pointer;
+          font-size: 18px;
+          height: 30px;
+          text-decoration: none;
+          text-align: center;
+          padding: .4rem;
+          position: relative;
+          width: 30px;
+          z-index: 10; }
 
 /* --------------------------------------------------------- fin de la seccion del contenedor carousel ---------------------------------------------------- */
 /* ----------------------------------------- estilos contenedor grid ------------------------------------------------------ */
-.contenedor-galeria {
-  background-color: #d5cedb; }
-  .contenedor-galeria .contenedor__grid {
-    background-color: #421763;
+.contenedor-galeria .container__galeria {
+  box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.22);
+  padding: .5rem;
+  margin-top: 1rem; }
+
+.contenedor-galeria .contenedor__grid {
+  padding: 1rem; }
+  .contenedor-galeria .contenedor__grid .galeria--imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: .8rem;
+    border-radius: 1rem; }
+
+@media screen and (min-width: 470px) {
+  .contenedor__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 200px;
-    gap: 10px;
-    margin-bottom: 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 380px;
+    gap: 10px; }
+  .texto__imagen-flex {
+    flex-direction: column; } }
+
+@media screen and (min-width: 470px) {
+  .contenedor__grid {
+    grid-template-columns: repeat(3, 1fr); } }
+
+.titulo-responsivo {
+  font-size: 40px;
+  margin: 1.5rem 0px;
+  padding: 1rem;
+  text-align: center; }
+
+.contenedor-texto-gente {
+  height: auto;
+  box-shadow: -5px -4px 7px 0px rgba(0, 0, 0, 0.24);
+  border-top-left-radius: 4rem;
+  margin-top: 3rem;
+  align-items: center; }
+  .contenedor-texto-gente .container .texto-gente__titulo-parrafo {
+    text-align: center;
     padding: 1rem; }
-    .contenedor-galeria .contenedor__grid .galeria--imagen {
+    .contenedor-texto-gente .container .texto-gente__titulo-parrafo * {
+      margin-top: 1.5rem; }
+  .contenedor-texto-gente .container .contenedor-imagen {
+    padding: 1.5rem; }
+    .contenedor-texto-gente .container .contenedor-imagen .imagen--texto {
       width: 100%;
       height: 100%;
-      object-fit: cover; }
-
-/*  ------------ aqui terminan los estilos de grid ------------------- */
-.jumbotron {
-  background-color: aliceblue !important;
-  margin-bottom: 0; }
-  .jumbotron .titulo-responsivo {
-    font-size: 3vw;
-    margin-bottom: 2rem;
-    text-shadow: 0 8px 9px #629E84, 0px -2px 1px; }
-  .jumbotron .titulo--efecto {
-    color: #629E84;
-    font-weight: 600; }
+      object-fit: cover;
+      border-radius: 1rem; }
 
 .section-figura {
   background-image: url(https://www.eltiempo.com/uploads/2018/01/26/5a6bcf8f5f050.jpeg);
@@ -143,7 +183,6 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  margin-top: -2rem;
   height: 80vh; }
 
 .section-figura__titulo {
@@ -153,16 +192,47 @@ li {
   display: block;
   animation: texto 0.3s ease infinite alternate;
   font-family: "Libre Baskerville", serif;
-  font-size: 80px;
+  font-size: 50px;
   color: #fff;
   text-align: center;
-  line-height: 100px;
+  line-height: 400px;
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.6); }
 
 @keyframes texto {
   100% {
     top: -30px;
     text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc, 0 30px 30px rgba(0, 0, 0, 0.3); } }
+
+@media screen and (min-width: 460px) {
+  .contenedor__grid {
+    grid-template-columns: repeat(2, 1fr); }
+    .contenedor__grid .container__galeria:nth-child(3) {
+      grid-row-start: span 2;
+      grid-column-start: span 2; }
+    .contenedor__grid .container__galeria:nth-child(5) {
+      grid-row-start: span 2; } }
+
+@media screen and (min-width: 680px) {
+  .contenedor__grid .container__galeria:nth-child(3) {
+    grid-row-start: span 1;
+    grid-column-start: span 1; }
+  .contenedor__grid .container__galeria:nth-child(5) {
+    grid-row-start: span 2; }
+  .contenedor__grid .container__galeria:nth-child(2) {
+    grid-row-start: span 2; } }
+
+@media screen and (min-width: 960px) {
+  .contenedor__grid {
+    grid-template-columns: repeat(4, 1fr); }
+    .contenedor__grid .container__galeria:nth-child(1) {
+      grid-column: 1 / 2; }
+    .contenedor__grid .container__galeria:nth-child(2) {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2; }
+    .contenedor__grid .container__galeria:nth-child(3) {
+      grid-column: 3 / 4; }
+    .contenedor__grid .container__galeria:nth-child(5) {
+      grid-row: 2 / 3; } }
 
 /* --------------------------------------------- seccion catalogo ----------------------------------------- */
 .alto-jumbotron {
@@ -171,8 +241,9 @@ li {
   background-repeat: no-repeat repeat;
   background-size: cover;
   background-position: center center;
+  background-attachment: fixed;
   display: flex;
-  height: 55vh;
+  height: 75vh;
   justify-content: center;
   margin-bottom: 0;
   position: relative; }
@@ -189,27 +260,60 @@ li {
   .alto-jumbotron .alto-jumbotrom__container--boton {
     font-weight: 500;
     position: relative; }
+  .alto-jumbotron .btn--llamanos {
+    background-color: #623A80;
+    border: none; }
+    .alto-jumbotron .btn--llamanos:hover {
+      background-color: #421763; }
+  .alto-jumbotron .btn--boton {
+    background-color: #421763;
+    color: #FFEFCA; }
+    .alto-jumbotron .btn--boton:hover {
+      background-color: #629E84; }
 
-.coleccion-card--img {
-  height: 300px;
-  object-fit: cover;
-  object-position: center center; }
-  .coleccion-card--img:hover {
-    transition: all .3s ease-in-out;
-    background-color: #FFEFCA;
-    filter: opacity(0.9); }
+.section-galeria {
+  padding: 1.5rem; }
+  .section-galeria .galeria__card {
+    display: grid;
+    gap: 1rem; }
+  .section-galeria .card--imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .6rem; }
 
-.btn--llamanos {
-  background-color: #623A80;
-  border: none; }
-  .btn--llamanos:hover {
-    background-color: #421763; }
+@media screen and (min-width: 460px) {
+  .galeria__card {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 340px 340px 340px;
+    gap: 1rem; } }
 
-.btn--boton {
-  background-color: #421763;
-  color: #FFEFCA; }
-  .btn--boton:hover {
-    background-color: #629E84; }
+@media screen and (min-width: 680px) {
+  .galeria__card {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 340px 340px 340px;
+    gap: 1rem; }
+    .galeria__card .card-imagenes:nth-child(6) {
+      grid-column: 3 / 4;
+      grid-row: 2 / 4; } }
+
+@media screen and (min-width: 980px) {
+  .galeria__card {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 340px 340px 340px;
+    gap: 1rem; }
+    .galeria__card .card-imagenes:nth-child(1) {
+      grid-row: 1 / 3; }
+    .galeria__card .card-imagenes:nth-child(3) {
+      grid-column: 3 / 5; }
+    .galeria__card .card-imagenes:nth-child(4) {
+      grid-column: 3 / 5;
+      grid-row: 3 / 4; }
+    .galeria__card .card-imagenes:nth-child(5) {
+      grid-row: 3 / 4; }
+    .galeria__card .card-imagenes:nth-child(6) {
+      grid-column: 2 / 3;
+      grid-row: 2 / 4; } }
 
 /* seccion ----------------------------------------------------- quienes somos */
 .alto-jumbotron-quienes {
@@ -373,16 +477,24 @@ li {
             width: 100px; }
 
 .footer {
-  background-color: #FFEFCA;
-  height: 30vh; }
-  .footer .footer__logo,
-  .footer .footer__contacto,
-  .footer .footer__redes {
-    color: black; }
-  .footer .footer__titulo {
-    margin-top: 2rem; }
-  .footer .footer__final {
-    text-align: center; }
-    .footer .footer__final .footer__autor {
-      color: black;
-      font-size: 0.5rem; }
+  text-align: center;
+  background-color: #FFEFCA; }
+  .footer .contenedor-footer {
+    display: flex;
+    height: inherit;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 35vh; }
+    .footer .contenedor-footer .footer__elementos-titulo > * {
+      font-size: 1.3rem;
+      margin-top: 3.5rem; }
+    .footer .contenedor-footer .footer__elementos-redes .footer__elementos-li {
+      display: flex; }
+      .footer .contenedor-footer .footer__elementos-redes .footer__elementos-li > * {
+        padding: .7rem;
+        margin: .5rem;
+        border: 2px solid black;
+        border-radius: 100%; }
+    .footer .contenedor-footer * > span {
+      font-size: .8rem; }

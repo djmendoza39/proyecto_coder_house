@@ -1,26 +1,49 @@
 
 .footer {
     //background-image: linear-gradient(to right, $primary, #95BCAB);
+    text-align: center;
     background-color: $primary;
-    height: 30vh;
-    
-  
-    .footer__logo,
-    .footer__contacto,
-    .footer__redes {
-      color: $color-texto;
-    }
-  
-    .footer__titulo {
-      margin-top: 2rem;
-    }
-  
-    .footer__final {
-      text-align: center;
-  
-      .footer__autor {
-        color: $color-texto;
-        font-size: 0.5rem;
+    .contenedor-footer{
+      display: flex;
+      height: inherit;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 35vh;
+      .footer__elementos-titulo{
+      
+        & > *{
+          font-size: 1.3rem;
+          margin-top: 3.5rem ;
+        }
+
       }
+
+      .footer__elementos-redes{
+
+        .footer__elementos-li{
+          
+          display: flex;
+          & > *{
+            padding: .7rem;
+            margin: .5rem;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 100%;
+            
+          }
+
+        }
+
+      }
+
+      * > span{
+        font-size: .8rem;
+        
+      }
+      
+      
+      
     }
+  
+    
   }

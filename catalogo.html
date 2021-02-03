@@ -8,10 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
     
     <link rel="stylesheet" href="css/estilos.css">
 </head>
@@ -19,267 +16,129 @@
 
     <main>
         <!------------------------------ seccion header -------------------------->
-        <section class="header p-3  bg-dark text-white"> <!-- bloque -->
+        <section class="header"> <!-- bloque -->
 
-            <div class=" container">
-                <div class=" row header__nav d-flex p-2 justify-content-around align-items-center"> 
-
-                     <div class="header__nav-logo col-lg-6 "> <!--elemento -->
-        
-                       <h1 class="titulo1"> <a class="header--nav-titulo" href="index.html">La guaji</a></h1> <!-- modificador -->
-        
-                    </div>
-                    
-                    <nav class="header__nav-menu align-items-center d-flex p-2 justify-content-between col-lg-6 text-rigth"> <!--elemento --> 
-        
-                        <a class="header__nav--link active" href="index.html">Inicio</a> 
-                        <a class="header__nav--link" href="catalogo.html">Catologo</a> 
-                        <a class="header__nav--link" href="quienes-somos.html">Quienes somos</a> 
-                        <a class="header__nav--link" href="contactanos.html">Contactanos</a>
-        
-                    </nav>
-
-                </div>
-    
-            </div>
             
+            <div class="header__nav container"> 
+
+                 <div class="header__nav-logo "> <!--elemento -->
+    
+                   <h1 class="titulo1"> <a class="header--nav-titulo" href="index.html">La guaji</a></h1> <!-- modificador -->
+    
+                </div>
+                <div class="menu__bars">
+                    <a href=""><i class="fa fa-bars"></i></a> 
+                </div>
+                
+                 <nav class="header__nav-menu"> 
+                    <div class="nav-menu__none">
+                        <a class="header__nav--link active" href="index.html">Inicio</a>
+                        <a class="header__nav--link" href="catalogo.html">Catologo</a>
+                        <a class="header__nav--link" href="quienes-somos.html">Quienes somos</a>
+                        <a class="header__nav--link" href="contactanos.html">Contactanos</a>
+                    </div>
+                </nav>
+
+            </div>
+
+       
+        
         </section>
         
-        <section class="jumbotron text-center alto-jumbotron">
-            <div class="alto-jumbotrom__container container">
-                <h2 class="alto-jumbotrom__container--titulo jumbotron-heading text-white titulo1">Colección Sofias</h2>
-                <p class="alto-jumbotrom__container--parrafo lead text-white">La magia en nuestras mochilas</p>
-                  <a href="#" class="alto-jumbotrom__container--boton btn btn-primary my-2 btn--llamanos">LLamanos</a>
-                  <a href="#" class="alto-jumbotrom__container--boton btn btn-secondary my-2 btn--boton">Escribenos</a>
+        <section class="text-center alto-jumbotron">
+            <div class=" container">
+                <h2>Colección Sofias</h2>
+                <p >La magia en nuestras mochilas</p>
+                  <a href="#">LLamanos</a>
+                  <a href="#">Escribenos</a>
                 </p>
               </div>
         </section>
 
-        <div class="coleccion py-5 bg-light">
-            <div class="container">
+        <section class="section-galeria">
             
-                <div class="coleccion-card row">
-                    
-                    <div class="col-sm-6 col-md-4 col-lg-4">
-                        <div class="card mb-4 shadow-sm imagen-catalogo">
-                            <img class="coleccion-card--img card-img-top"
-                                alt="Mochila wayu"
-                                src="img/imagenes-galeria/mochila11 - copia.jpg">
-                            <div class="card-body">
-                                <p class="card-text">Nuestra coleccion de mochilas wayu te regalara una expereciencia maravillosa y elegante</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary btn--boton">Ver mas</button>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4">
-                        <div class="card mb-4 shadow-sm imagen-catalogo">
-                            <img class=" coleccion-card--img card-img-top"
-                                alt="Mochila wayu"
-                                src="img/imagenes-galeria/mochila3 - copia.jpg"
-                                >
-                            <div class="card-body">
-                                <p class="card-text">Nuestra coleccion de mochilas wayu te regalara una expereciencia maravillosa y elegante</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary btn--boton">Ver mas</button>
-                                        
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4">
-                        <div class="card mb-4 shadow-sm imagen-catalogo">
-                            <img class="coleccion-card--img card-img-top"
-                                alt="Mochila wayu"
-                                src="img/imagenes-galeria/mochila4 - copia.jpeg"
-                                >
-                            <div class="card-body">
-                                <p class="card-text">Nuestra coleccion de mochilas wayu te regalara una expereciencia maravillosa y elegante</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary btn--boton">Ver mas</button>
-                                        
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4">
-                        <div class="card mb-4 shadow-sm imagen-catalogo">
-                            <img class="coleccion-card--img card-img-top"
-                                alt="Mochila wayu"
-                                src="img/imagenes-galeria/mochila5 - copia.jpeg"
-                                >
-                            <div class="card-body">
-                                <p class="card-text">Nuestra coleccion de mochilas wayu te regalara una expereciencia maravillosa y elegante</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary btn--boton">Ver mas</button>
-                                        
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4">
-                        <div class="card mb-4 shadow-sm imagen-catalogo">
-                            <img class="coleccion-card--img card-img-top"
-                                alt="Mochila wayu"
-                                src="img/imagenes-galeria/mochila6 - copia.jpeg"
-                                >
-                            <div class="card-body">
-                                <p class="card-text">Nuestra coleccion de mochilas wayu te regalara una expereciencia maravillosa y elegante</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary btn--boton">Ver mas</button>
-                                        
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4">
-                        <div class="card mb-4 shadow-sm imagen-catalogo">
-                            <img class="coleccion-card--img card-img-top"
-                                alt="Mochila wayu"
-                                src="img/imagenes-galeria/mochila7 - copia.jpeg"
-                                >
-                            <div class="card-body">
-                                <p class="card-text">Nuestra coleccion de mochilas wayu te regalara una expereciencia maravillosa y elegante</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary btn--boton">Ver mas</button>
-                                        
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4">
-                        <div class="card mb-4 shadow-sm imagen-catalogo">
-                            <img class="coleccion-card--img card-img-top "
-                                alt="Mochila wayu"
-                                src="img/imagenes-galeria/mochila8 - copia.jpeg"
-                                >
-                            <div class="card-body">
-                                <p class="card-text">Nuestra coleccion de mochilas wayu te regalara una expereciencia maravillosa y elegante</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary btn--boton">Ver mas</button>
-                                        
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-sm-6 col-md-4 col-lg-4">
-                        <div class="card mb-4 shadow-sm imagen-catalogo">
-                            <img class="coleccion-card--img card-img-top"
-                                alt="Mochila wayu"
-                                src="img/imagenes-galeria/mochila9 - copia.jpeg"
-                                >
-                            <div class="card-body">
-                                <p class="card-text">Nuestra coleccion de mochilas wayu te regalara una expereciencia maravillosa y elegante</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary btn--boton">Ver mas</button>
-                                        
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-sm-6 col-md-4 col-lg-4">
-                        <div class="card mb-4 shadow-sm imagen-catalogo">
-                            <img class="coleccion-card--img card-img-top align-self-start mr-3"
-                                alt="Mochila wayu"
-                                src="img/imagenes-galeria/mochila10 - copia.jpg"
-                                >
-                            <div class="card-body">
-                                <p class="card-text">Nuestra coleccion de mochilas wayu te regalara una expereciencia maravillosa y elegante</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary btn--boton">Ver mas</button>
-                                        
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
+            <div class="container galeria__card">
+                
+                <div class="card-imagenes">
+                    <a href="#">
+                        <img src="img/imagenes-galeria/mochila2.jpeg" alt="fotos galerias" class="card--imagen">
+                        <span>Ver mas </span>
+                    </a>
                 </div>
-            </div>
+                <div class="card-imagenes">
+                    <a href="#">
+                        <img src="img/imagenes-galeria/mochila8.jpg" alt="fotos galerias" class="card--imagen">
+                        <span>Ver mas </span>
+                    </a>
+                </div>
+                <div class="card-imagenes">
+                    <a href="#">
+                        <img src="img/imagenes-galeria/mochila7.jpeg" alt="fotos galerias" class="card--imagen">
+                        <span>Ver mas </span>
+                    </a>
+                </div>
+                <div class="card-imagenes">
+                    <a href="#">
+                        <img src="img/imagenes-galeria/mochila6.jpeg" alt="fotos galerias" class="card--imagen">
+                        <span>Ver mas </span>
+                    </a>
+                </div>
+                <div class="card-imagenes">
+                    <a href="#">
+                        <img src="img/imagenes-galeria/mochila5.jpeg" alt="fotos galerias" class="card--imagen">
+                        <span>Ver mas </span>
+                    </a>
+                </div>
+                <div class="card-imagenes">
+                    <a href="#">
+                        <img src="img/imagenes-galeria/mochila4.jpeg" alt="fotos galerias" class="card--imagen">
+                        <span>Ver mas </span>
+                    </a>
+                </div>
+
+                <div class="card-imagenes">
+                    <a href="#">
+                        <img src="img/imagenes-galeria/mochila3.jpeg" alt="fotos galerias" class="card--imagen">
+                        <span>Ver mas </span>
+                    </a>
+                </div>
+
+                <div class="card-imagenes">
+                    <a href="#">
+                        <img src="img/imagenes-galeria/mochila9.jpg" alt="fotos galerias" class="card--imagen">
+                        <span>Ver mas </span>
+                    </a>
+                </div>
+
             </div>
 
+        </section>
 
 
         
         
         <!------------------------------------------- footer ------------------------------>
-        <footer class="footer bg-ligth">
+         
+         <footer class="footer"><!-- bloque -->
         
-            <div class="footer__contenedor container d-flex p-2 justify-content-around">  
-
-                <div class="footer__logo">
-        
-                    <h6 class="footer__titulo titulo6">Logo</h6>
-                    <p class="footer__texto">
-                        Inspirados por el amor a Colombia y México D&amp;C Sucesores ha seleccionado sólo la mejor calidad de
-                        artesanías colombianas, explora nuestras galerías y apoya a productores directamente, promoviendo sus
-                        productos en el extranjero.
-                    </p>
-            
+            <div class="contenedor-footer">
+                <div class="footer__elementos-titulo">
+                    <h3> Síguenos tambien aquí </h3>
                 </div>
-            
-                <div class="footer__contacto">
-            
-                    <h6 class="footer__titulo titulo6">Contactanos</h6>
-                    <p class="footer__texto">
-                        Si tienes dudas respecto a tus pedidos, comentarios o sugerencias por favor comunícate a:
-                        contacto@dcsucesores.com
-            
-                    </p>
-            
-            
-            
+                <div class="footer__elementos-redes">
+                    <ul class="footer__elementos-li">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                    </ul>
                 </div>
-            
-                <div class="footer__redes">
-            
-                    <!-- Esta forma o metodo no es la correspondiente, pero afines de la clase y de practica se realizó en esta seccion footer -->
-                    <h6 class="footer__titulo titulo6">Redes Sociales</h6>
-                   
-                            <a  href="#" class="footer__a"> <i class=" fa fa-whatsapp" style="font-size:30px; color: rgb(35, 141, 35);"></i> </a>
-                            <a href="#" class="footer__a"> <i class=" fa fa-instagram" style="font-size:30px; color:rgb(120, 5, 165)"></i> </a>
-                            <a href="#" class="footer__a"> <i class=" fa fa-facebook" style="font-size:30px; color:royalblue"></i> </a>
+                <div class="footer__elementos">
+                    <span>CopyRight&#169laGuaji - 2021 aviso legal, politica de privacidad <br> Web diseñada  con HTML y CSS3</span>    
                 </div>
-            
                 
-
             </div>
-            <div class="footer__final container">
-            
-                <span class="footer__autor">@derechos reservados de autor</span>
-        
-            </div>
-            
-        
             
         
         </footer>

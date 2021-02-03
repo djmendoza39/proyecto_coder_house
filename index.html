@@ -9,10 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
     
     <link rel="stylesheet" href="css/estilos.css">
 </head>
@@ -21,152 +21,132 @@
     <main>
 
         <!-- Se aplica la metodologia bem en la seccion del header -->
-        <section class="header p-3  bg-dark text-white"> <!-- bloque -->
+        <section class="header"> <!-- bloque -->
 
-            <div class=" container">
-                <div class=" row header__nav d-flex p-2 justify-content-around align-items-center"> 
+            
+                <div class="header__nav container"> 
 
-                     <div class="header__nav-logo col-lg-6 "> <!--elemento -->
+                     <div class="header__nav-logo "> <!--elemento -->
         
                        <h1 class="titulo1"> <a class="header--nav-titulo" href="index.html">La guaji</a></h1> <!-- modificador -->
         
                     </div>
+                    <div class="menu__bars">
+                        <a href=""><i class="fa fa-bars"></i></a> 
+                    </div>
                     
-                    <nav class="header__nav-menu align-items-center d-flex p-2 justify-content-between col-lg-6 text-rigth"> <!--elemento --> 
-        
-                        <a class="header__nav--link active" href="index.html">Inicio</a> 
-                        <a class="header__nav--link" href="catalogo.html">Catologo</a> 
-                        <a class="header__nav--link" href="catalogo.html">Quienes somos</a>
-                        <a class="header__nav--link" href="contactanos.html">Contactanos</a>
-                        
-        
+                     <nav class="header__nav-menu"> 
+                        <div class="nav-menu__none">
+                            <a class="header__nav--link active" href="index.html">Inicio</a>
+                            <a class="header__nav--link" href="catalogo.html">Catologo</a>
+                            <a class="header__nav--link" href="catalogo.html">Quienes somos</a>
+                            <a class="header__nav--link" href="contactanos.html">Contactanos</a>
+                        </div>
                     </nav>
 
                 </div>
     
-            </div>
+           
             
         </section>
 
-        <section class="carousel carousel-inner">
+        <section class="seccion__slider">
       
-            <div id="demo" class="carousel slide " data-ride="carousel">
-                <ul class="carousel-indicators">
-                    <li data-target="#demo" data-slide-to="0" class="active"></li>
-                    <li data-target="#demo" data-slide-to="1"></li>
-                    <li data-target="#demo" data-slide-to="2"></li>
-                </ul>
-        
-                <div class=" contenedor-imagenes-1 carousel-item active">
+            <!-- aqui va el slider -->
+            <div class="contenedor-slider">
+
+                <ul class="contenedor__slider-carrusel" >
+                    <li id="slider1" class="slider-carrusel-li "><img class="slider-carrusel--img " src="img/imagen-slider-1.jpg" alt="Imagen 1"></li>
+                    <li id="slider2" class="slider-carrusel-li "><img class="slider-carrusel--img " src="img/imagen-slider-2" alt="imagen 2"></li>
+                    <li id="slider3" class="slider-carrusel-li "><img class="slider-carrusel--img " src="img/imagen-slider-3.jpg" alt="imagen 3"></li>
                     
-                    <div class="texto carousel-caption">
-                        <h3 class="titulo3">Tejiendo con el alma</h3>
-                        <p>Con mucho amor</p>
-                    </div>
-                </div>
-                <div class=" contenedor-imagenes-2 carousel-item">
-                   
-        
-                    <div class=" texto carousel-caption">
-                        <h3 class="titulo3">Tierra Santa</h3>
-                        <p>Producto del olvido</p>
-                    </div>
-                </div>
-                <div class=" contenedor-imagenes-3 carousel-item ">
-                   
-                    <div class="texto carousel-caption">
-                        <h3 class="titulo3">Gente humilde</h3>
-                        <p>Entregando su arte y su magia</p>
-                    </div>
-                </div>
+                </ul>
+
+                <ul class="slider-carrusel__navegacion">
+                    <li class="navegacion__li"><a href="#slider1">1</a></li>
+                    <li class="navegacion__li"><a href="#slider2">2</a></li>
+                    <li class="navegacion__li"><a href="#slider3">3</a></li>
+                </ul>
                 
+            
             </div>
+
+           
         
         </section>
-        <section>
-            <div class="jumbotron jumbotron-fluid text-center">
-                <div class="container">
-                  <h1 class="titulo-responsivo titulo1">Nuestro trabajo al alcance de tus manos</h1>      
-                  
-                </div>
-              </div>
+        <section class="titulo-responsivo" >
+
+            <h1 class=" responsivo__titulo1">La Guajíra, tierra de riquezas culturales</h1>      
+                   
         </section>
-        <section class="contenedor-galeria">
-            <div class="container contenedor__grid">
-                <div class="container-galeria">
-                    <img src="img/imagenes-galeria/dunas-taroa-guajira.jpg" alt="la guajira" class="galeria--imagen">
+
+        <section class="contenedor-galeria"> 
+            <div class=" contenedor__grid container">
+
+               <div class="container__galeria">
+                   <img src="img/imagenes-galeria/mochila6.jpeg" alt="" class="galeria--imagen">
+               </div>
+
+               <div class="container__galeria">
+                   <img src="img/laguajira-1024x683.jpg" alt="" class="galeria--imagen">
+               </div>
+
+               <div class="container__galeria">
+                   <img src="img/imagenes-galeria/mochila4.jpeg" alt="" class="galeria--imagen">
+               </div>
+
+               <div class="container__galeria">
+                   <img src="img/guajira1.jpg" alt="" class="galeria--imagen">
+               </div>
+
+                <div class="container__galeria">
+                    <img src="img/imagenes-galeria/mochila3.jpeg" alt="la guajira" class="galeria--imagen">
                 </div>
-                <div class="galeria">
-                    <img src="img/imagenes-galeria/guajira1.jpg" alt="la guajira" class="galeria--imagen">
-                </div>
+
                 <div class="container__galeria">
                     <img src="img/imagenes-galeria/guajira2.jpg" alt="la guajira" class="galeria--imagen">
                 </div>
                 <div class="container__galeria">
+                    <img src="img/imagenes-galeria/guajira1.jpg" alt="la guajira" class="galeria--imagen">
+                </div>
+                <div class="container__galeria">
                     <img src="img/imagenes-galeria/images7_big.jpg" alt="la guajira" class="galeria--imagen">
                 </div>
-                <div class="container__galeria">
-                    <img src="img/imagenes-galeria/mochila10 - copia.jpg" alt="la guajira" class="galeria--imagen">
-                </div>
-                <div class="container__galeria">
-                    <img src="img/imagenes-galeria/mochila9 - copia.jpeg" alt="la guajira" class="galeria--imagen">
-                </div>
-                <div class="container__galeria">
-                    <img src="img/imagenes-galeria/mochila8 - copia.jpeg" alt="la guajira" class="galeria--imagen">
-                </div>
-                <div class="container__galeria">
-                    <img src="img/imagenes-galeria/mochila6 - copia.jpeg" alt="la guajira" class="galeria--imagen">
-                </div>
-                <div class="container__galeria">
-                    <img src="img/imagenes-galeria/mochila11 - copia.jpg" alt="la guajira" class="galeria--imagen">
-                </div>
 
-                <div class="container__galeria">
-                    <img src="img/imagenes-galeria/mochila5 - copia.jpeg" alt="la guajira" class="galeria--imagen">
-                </div>
-                <div class="container__galeria">
-                    <img src="img/imagenes-galeria/mochila4 - copia.jpeg" alt="la guajira" class="galeria--imagen">
-                </div>
-                <div class="container__galeria">
-                    <img src="img/imagenes-galeria/mochila3 - copia.jpg " alt="la guajira" class="galeria--imagen">
-                </div>
             </div>
 
-        </section>
+        </section> 
 
         <section class="contenedor-texto-gente">
-            <div class="jumbotron jumbotron-fluid">
-                <div class="container ">
-                    <div class="grid row d-flex p-2 align-items-center">
 
-                        <div class="titulo-parrafo col-sm-6 .col-md-6 .col-lg-6">
+            <div class="container">
+
+                <div class="texto-gente__titulo-parrafo">
                            
-                                <h2 class="titulo1 titulo--efecto">Nuestra Gente</h2>
-                        
-                            
-                             <p class="parrafo">Los principales representantes de las artesanías de La Guajira, son aquellas elaboradas por los
-                                indígenas Wayúu; éstas se componen por tejidos –mochilas y chinchorros- elaborados a base de
-                                algodón, que se caracterizan por ser coloridos con diseños decorativos conformados por figuras
-                                geométricas que representan todo aquella que forma parte del diario vivir de los Wayúu.</p>
-    
-                        </div>
-                        <div class="contenedor-imagen col-sm-6 .col-md-6 .col-lg-6">
-                            <img src="img/wayyu1gif.gif" alt="Gif" class="" width="100%">
-                        </div>
+                    <h2 class="parrafo--titulo1">Nuestra Gente</h2>
+            
+                
+                 <p class="texto-gente__parrafo">Los principales representantes de las artesanías de La Guajira, son aquellas elaboradas por los
+                    indígenas Wayúu; éstas se componen por tejidos –mochilas y chinchorros- elaborados a base de
+                    algodón, que se caracterizan por ser coloridos con diseños decorativos.</p>
 
-                    </div>
-                    
                 </div>
+
+                <div class="contenedor-imagen">
+                    <img src="img/imagenes-galeria/dunas-taroa-guajira.jpg" alt="Playa guajira" class="imagen--texto">
+                </div>
+
             </div>
+            
         </section>
 
         <!-- metodologia bem -->
-        <section class="section-figura d-flex"><!-- bloque -->
-            <div class="section-figura__container container d-flex align-items-center justify-content-center  "><!-- Elemento -->
+        <section class="section-figura">
+            <div class="section-figura__container container">
                 
-                    <h1 class="section-figura__titulo text-center titulo1">Mi guajira</h1> <!-- Elemento -->
+                    <h1 class="section-figura__titulo text-center titulo1">Mi guajira</h1> 
           
-                <div class=" section-figura__dibujo"> <!-- Elemento -->
+                <div class=" section-figura__dibujo"> 
             
                 </div>
             
@@ -176,54 +156,26 @@
         
         <!------------------------------------------- footer ------------------------------>
          <!-- metodologia bem -->
-        <footer class="footer bg-ligth"><!-- bloque -->
+        <footer class="footer">
         
-            <div class="footer__contenedor container d-flex p-2 justify-content-around">  <!-- Elemento -->
-
-                <div class="footer__logo"><!-- Elemento -->
-        
-                    <h6 class="footer__titulo titulo6">Logo</h6><!-- Elemento -->
-                    <p class="footer__texto"><!-- Elemento -->
-                        Inspirados por el amor a Colombia y México D&amp;C Sucesores ha seleccionado sólo la mejor calidad de
-                        artesanías colombianas, explora nuestras galerías y apoya a productores directamente, promoviendo sus
-                        productos en el extranjero.
-                    </p>
-            
+            <div class="contenedor-footer">
+                <div class="footer__elementos-titulo">
+                    <h3> Síguenos tambien aquí </h3>
                 </div>
-            
-                <div class="footer__contacto"><!-- Elemento -->
-            
-                    <h6 class="footer__titulo titulo6">Contactanos</h6>
-                    <p class="footer__texto">
-                        Si tienes dudas respecto a tus pedidos, comentarios o sugerencias por favor comunícate a:
-                        contacto@dcsucesores.com
-            
-                    </p>
-            
-            
-            
+                <div class="footer__elementos-redes">
+                    <ul class="footer__elementos-li">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                    </ul>
                 </div>
-                <!-- elemento -->
-                <div class="footer__redes"> 
-            
-                    <!-- Esta forma o metodo no es la correspondiente, pero afines de la clase y de practica se realizó en esta seccion footer -->
-                    <h6 class="footer__titulo titulo titulo6">Redes Sociales</h6>
-                   
-                        <a  href="#" class="footer--a"> <i class=" fa fa-whatsapp" style="font-size:30px; color: rgb(35, 141, 35);"></i> </a> <!-- modificadores -->
-                        <a href="#" class="footer--a"> <i class=" fa fa-instagram" style="font-size:30px; color:rgb(120, 5, 165)"></i> </a><!-- modificadores -->
-                        <a href="#" class="footer--a"> <i class=" fa fa-facebook" style="font-size:30px; color:royalblue"></i> </a><!-- modificadores -->
+                <div class="footer__elementos">
+                    <span>CopyRight&#169laGuaji - 2021 aviso legal, politica de privacidad <br> Web diseñada  con HTML y CSS3</span>    
                 </div>
-            
                 
-
             </div>
-            <div class="footer__final container"> <!--Elemento-->
-            
-                <span class="footer__autor">@derechos reservados de autor</span> <!--Elemento-->
-        
-            </div>
-            
-        
             
         
         </footer>
