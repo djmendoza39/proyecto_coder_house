@@ -247,44 +247,60 @@ li {
   .alto-jumbotron .alto-jumbotrom__container--boton {
     font-weight: 500;
     position: relative; }
-
-.btn--llamanos {
-  background-color: #623A80;
-  border: none; }
-  .btn--llamanos:hover {
-    background-color: #421763; }
-
-.btn--boton {
-  background-color: #421763;
-  color: #FFEFCA; }
-  .btn--boton:hover {
-    background-color: #629E84; }
+  .alto-jumbotron .btn--llamanos {
+    background-color: #623A80;
+    border: none; }
+    .alto-jumbotron .btn--llamanos:hover {
+      background-color: #421763; }
+  .alto-jumbotron .btn--boton {
+    background-color: #421763;
+    color: #FFEFCA; }
+    .alto-jumbotron .btn--boton:hover {
+      background-color: #629E84; }
 
 .section-galeria {
   padding: 1.5rem; }
-  @media screen and (min-width: 960px) {
-    .section-galeria .galeria__card {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: 340px 340px 340px;
-      gap: 1rem; }
-      .section-galeria .galeria__card .card-imagenes:nth-child(1) {
-        grid-row: 1 / 3; }
-      .section-galeria .galeria__card .card-imagenes:nth-child(3) {
-        grid-column: 3 / 5; }
-      .section-galeria .galeria__card .card-imagenes:nth-child(4) {
-        grid-column: 3 / 5;
-        grid-row: 3 / 4; }
-      .section-galeria .galeria__card .card-imagenes:nth-child(5) {
-        grid-row: 3 / 4; }
-      .section-galeria .galeria__card .card-imagenes:nth-child(6) {
-        grid-column: 2 / 3;
-        grid-row: 2 / 4; } }
+  .section-galeria .galeria__card {
+    display: grid;
+    gap: 1rem; }
   .section-galeria .card--imagen {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: .6rem; }
+
+@media screen and (min-width: 460px) {
+  .galeria__card {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 340px 340px 340px;
+    gap: 1rem; } }
+
+@media screen and (min-width: 680px) {
+  .galeria__card {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 340px 340px 340px;
+    gap: 1rem; }
+    .galeria__card .card-imagenes:nth-child(6) {
+      grid-column: 3 / 4;
+      grid-row: 2 / 4; } }
+
+@media screen and (min-width: 980px) {
+  .galeria__card {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 340px 340px 340px;
+    gap: 1rem; }
+    .galeria__card .card-imagenes:nth-child(1) {
+      grid-row: 1 / 3; }
+    .galeria__card .card-imagenes:nth-child(3) {
+      grid-column: 3 / 5; }
+    .galeria__card .card-imagenes:nth-child(4) {
+      grid-column: 3 / 5;
+      grid-row: 3 / 4; }
+    .galeria__card .card-imagenes:nth-child(5) {
+      grid-row: 3 / 4; }
+    .galeria__card .card-imagenes:nth-child(6) {
+      grid-column: 2 / 3;
+      grid-row: 2 / 4; } }
 
 /* seccion ----------------------------------------------------- quienes somos */
 .alto-jumbotron-quienes {
