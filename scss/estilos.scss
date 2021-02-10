@@ -23,6 +23,19 @@ $terceario: #629E84;
   max-width: 1250px;
 }
 
+.button {
+  background-color: $terceario;
+  border: none;
+  color: white;
+  padding: 1.5rem;
+  margin: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 @for $i from 1 to 7{
 
   .titulo#{$i}{
