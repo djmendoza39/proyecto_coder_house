@@ -9,7 +9,7 @@
   max-width: 1250px; }
 
 .button {
-  background-color: #629E84;
+  background-color: #421763;
   border: none;
   color: white;
   padding: 1.5rem;
@@ -19,6 +19,8 @@
   display: inline-block;
   font-size: 16px;
   cursor: pointer; }
+  .button:hover {
+    background-color: #368362; }
 
 .titulo1 {
   font-family: "Arvo", serif; }
@@ -54,7 +56,7 @@ li {
     justify-content: space-between;
     align-items: center; }
     .header .header__nav .menu__bars {
-      background-color: #629E84;
+      background-color: #95BCAB;
       margin-right: 1rem; }
       .header .header__nav .menu__bars * > i {
         font-size: 1.5rem;
@@ -73,7 +75,7 @@ li {
       letter-spacing: -4px;
       text-shadow: 0 8px 9px #d8bd95, 0px -2px 1px #176294; }
     .header .header__nav .header__nav--link {
-      color: black;
+      color: #421763;
       display: block;
       font-family: "Libre Baskerville", serif;
       padding: 1.5rem;
@@ -136,12 +138,12 @@ li {
           z-index: 10; }
 
 /* --------------------------------------------------------- fin de la seccion del contenedor carousel ---------------------------------------------------- */
-/* ----------------------------------------- estilos contenedor grid ------------------------------------------------------ */
 .titulo-responsivo {
-  font-size: 2rem;
   margin: 1.5rem 0px;
   padding: 1rem;
   text-align: center; }
+  .titulo-responsivo .responsivo__titulo1 {
+    font-size: 2.5rem; }
 
 .contenedor-informacion .flex__contenedor-1 .flex__contenedor-contenido {
   padding: 1.5rem; }
@@ -177,10 +179,22 @@ li {
     background-repeat: no-repeat;
     background-clip: border-box;
     background-size: cover;
-    height: 50vh; }
+    height: 50vh;
+    position: relative; }
+    .contenedor-informacion .flex-contenedor-2 .contenido-flex__contenedor-2::before {
+      background-color: rgba(0, 0, 0, 0.6);
+      bottom: 0;
+      content: "";
+      left: 0;
+      right: 0;
+      top: 0;
+      position: absolute; }
     .contenedor-informacion .flex-contenedor-2 .contenido-flex__contenedor-2 > p {
       padding: 1.5rem;
-      text-align: center; }
+      text-align: center;
+      font-size: 18px;
+      color: #fff;
+      position: relative; }
 
 .contenedor-informacion .flex__contenedor-3 .flex__contenedor-contenido {
   padding: 1.5rem; }
@@ -269,12 +283,12 @@ li {
     background-color: #623A80;
     border: none; }
     .alto-jumbotron .btn--llamanos:hover {
-      background-color: #421763; }
+      background-color: #623A80; }
   .alto-jumbotron .btn--boton {
-    background-color: #421763;
+    background-color: #623A80;
     color: #FFEFCA; }
     .alto-jumbotron .btn--boton:hover {
-      background-color: #629E84; }
+      background-color: #629E85; }
 
 .section-galeria {
   padding: 1.5rem; }
@@ -433,7 +447,7 @@ li {
         margin-left: 0;
         text-align: center; }
         .flex-contactanos .header__contacto .botones-container *:hover {
-          color: #629E84; }
+          color: #126542; }
   .flex-contactanos .section-formulario {
     background-image: url(https://pbs.twimg.com/media/D2or_2JX4AE7gpg.jpg);
     background-position: center center;
@@ -471,13 +485,13 @@ li {
       .flex-contactanos .section-formulario .section-formulario__contacto .formulario__boton {
         display: flex; }
         .flex-contactanos .section-formulario .section-formulario__contacto .formulario__boton .formulario--boton {
-          background-color: #421763;
+          background-color: #95BCAB;
           border: none;
           cursor: pointer;
           position: relative;
           width: 80px; }
           .flex-contactanos .section-formulario .section-formulario__contacto .formulario__boton .formulario--boton:hover {
-            background-color: #629E84;
+            background-color: #368362;
             transition: width 2s, height 4s;
             width: 100px; }
 

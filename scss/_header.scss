@@ -1,5 +1,5 @@
 .header{
-  background-color: $primary ;
+  background-color: $color-primary ;
 
 
   .header__nav{
@@ -9,7 +9,7 @@
     align-items: center;
     
     .menu__bars{
-      background-color: $terceario;
+      background-color: $color-secondary-2-2;
       margin-right: 1rem;
       * > i{
 
@@ -29,7 +29,7 @@
     
     .header--nav-titulo {
      
-      color: $primary;
+      color: $color-primary;
       text-decoration: none;
       text-transform: uppercase;
       padding: 10px;
@@ -44,7 +44,7 @@
     
     .header__nav--link {
       
-      color: $color-texto;
+      color: $color-secondary-1-4;
       display: block;
       font-family: $fontTexto;
       padding: 1.5rem;

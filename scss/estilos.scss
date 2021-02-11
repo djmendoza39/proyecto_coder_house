@@ -2,11 +2,26 @@
 //variables
 $fontTitulos: "Arvo", serif;
 $fontTexto: "Libre Baskerville", serif; 
-$primary: #FFEFCA;
-$color-boton: #421763;
 $color-texto: black;
-$terceario: #629E84;
 
+//paleta de colores
+$color-primary: #FFEFCA;
+$color-primary-1: #E7CC8F;	// Main Primary color */
+$color-primary-2: #FFFAEE;
+$color-primary-3: #BF9D4F;
+$color-primary-4: #946F1A;
+
+$color-secondary-1-0: #83649B;	// Main Secondary color (1) */
+$color-secondary-1-1: #D6CEDB;
+$color-secondary-1-2: #A995B9;
+$color-secondary-1-3: #623A80;
+$color-secondary-1-4: #421763;
+
+$color-secondary-2-0: #629E85;	// Main Secondary color (2) */
+$color-secondary-2-1: #CEDDD7;
+$color-secondary-2-2: #95BCAB;
+$color-secondary-2-3: #368362;
+$color-secondary-2-4: #126542;
 
 
 /*Estilos Generales*/
@@ -24,7 +39,7 @@ $terceario: #629E84;
 }
 
 .button {
-  background-color: $terceario;
+  background-color: $color-secondary-1-4;
   border: none;
   color: white;
   padding: 1.5rem;
@@ -34,6 +49,9 @@ $terceario: #629E84;
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
+  &:hover{
+    background-color: $color-secondary-2-3 ;
+  }
 }
 
 @for $i from 1 to 7{

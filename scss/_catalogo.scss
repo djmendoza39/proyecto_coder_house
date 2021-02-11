@@ -34,14 +34,14 @@
         background-color: #623A80;
         border:none;
         &:hover{
-          background-color: $color-boton;
+          background-color: $color-secondary-1-3;
         }
       }
       .btn--boton{
-       background-color: $color-boton ;
-       color: $primary;
+       background-color: $color-secondary-1-3 ;
+       color: $color-primary;
         &:hover{
-          background-color: $terceario;
+          background-color: $color-secondary-2-0;
         }
       }
   
