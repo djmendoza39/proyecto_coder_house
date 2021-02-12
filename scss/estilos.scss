@@ -6,18 +6,18 @@ $color-texto: black;
 
 //paleta de colores
 $color-primary: #FFEFCA;
-$color-primary-1: #E7CC8F;	// Main Primary color */
+$color-primary-1: #E7CC8F;	// colores primarios */
 $color-primary-2: #FFFAEE;
 $color-primary-3: #BF9D4F;
 $color-primary-4: #946F1A;
 
-$color-secondary-1-0: #83649B;	// Main Secondary color (1) */
+$color-secondary-1-0: #83649B;	// colores secundarios */
 $color-secondary-1-1: #D6CEDB;
 $color-secondary-1-2: #A995B9;
 $color-secondary-1-3: #623A80;
 $color-secondary-1-4: #421763;
 
-$color-secondary-2-0: #629E85;	// Main Secondary color (2) */
+$color-secondary-2-0: #629E85;	// colores secundarios base 3 (2) */
 $color-secondary-2-1: #CEDDD7;
 $color-secondary-2-2: #95BCAB;
 $color-secondary-2-3: #368362;
@@ -72,7 +72,7 @@ li {
 }
 /* <----------- cierre de estilos generales----------------- */
 
-
+@import "media-query";
 @import "header";
 @import "index";
 @import "catalogo";

@@ -1,145 +1,174 @@
-    
-    /* --------------------------------------------- seccion catalogo ----------------------------------------- */
-    .alto-jumbotron {
+/* --------------------------------------------- seccion catalogo ----------------------------------------- */
+.alto-jumbotron {
+  align-items: center;
+  background-image: url(https://colombia.travel/sites/default/files/inline-images/xLos-tejidos-Way,PC3,PBAu_-lo-mejor-del-crochet---Cortesia-Mario-Carvajal-www.mariocarvajal.jpg.pagespeed.ic.Je2ROLAKQF.jpg);
+  background-repeat: no-repeat repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  display: flex;
+  height: 75vh;
+  justify-content: center;
+  margin-bottom: 0;
+  position: relative;
 
-      align-items: center;
-      background-image: url(https://colombia.travel/sites/default/files/inline-images/xLos-tejidos-Way,PC3,PBAu_-lo-mejor-del-crochet---Cortesia-Mario-Carvajal-www.mariocarvajal.jpg.pagespeed.ic.Je2ROLAKQF.jpg);
-      background-repeat: no-repeat repeat;
-      background-size: cover;
-      background-position: center center;
-      background-attachment: fixed;
-      display: flex;
-      height: 75vh;
-      justify-content: center;
-      margin-bottom: 0;
-      position: relative;
-    
-      &::before {
-        background-color: rgba(0, 0, 0, 0.6);
-        bottom: 0;
-        content: "";
-        left: 0;
-        right: 0;
-        top: 0;
-        position: absolute;
-      }
+  &::before {
+    background-color: rgba(0, 0, 0, 0.6);
+    bottom: 0;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+  }
 
-      .alto-jumbotrom__container--titulo,
-      .alto-jumbotrom__container--parrafo,
-      .alto-jumbotrom__container--boton {
-        font-weight: 500;
-        position: relative;
-      }
-      .btn--llamanos{
-        background-color: #623A80;
-        border:none;
-        &:hover{
-          background-color: $color-secondary-1-3;
-        }
-      }
-      .btn--boton{
-       background-color: $color-secondary-1-3 ;
-       color: $color-primary;
-        &:hover{
-          background-color: $color-secondary-2-0;
-        }
-      }
-  
-    
-  
-  
+  .alto-jumbotrom__container--titulo,
+  .alto-jumbotrom__container--parrafo,
+  .alto-jumbotrom__container--boton {
+    font-weight: 500;
+    position: relative;
+  }
+  .btn--llamanos {
+    background-color: #623a80;
+    border: none;
+    &:hover {
+      background-color: $color-secondary-1-3;
     }
-        
-  
+  }
+  .btn--boton {
+    background-color: $color-secondary-1-3;
+    color: $color-primary;
+    &:hover {
+      background-color: $color-secondary-2-0;
+    }
+  }
+}
+
 //seccion catalogo card
-      .section-galeria{
-        padding: 1.5rem;
-        .galeria__card{
-          display: grid;
-          gap: 1rem;
-          .card-imagenes{
-              .card--imagen{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: .6rem;
-                &:hover{
-                    filter: brightness(40%);
-                    transition: all .5s ;
-                    text-align: center;
-                }
-              }
-            
-
-          }
+.section-galeria {
+  padding: 1.5rem;
+  .galeria__card {
+    display: grid;
+    gap: 1rem;
+    .card-imagenes {
+      .card--imagen {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0.6rem;
+        &:hover {
+          filter: brightness(40%);
+          transition: all 0.5s;
+          text-align: center;
         }
- 
+      }
+    }
+  }
+}
+
+//seccion informativa sobre las mochilas wayúu
+.contenedor-informativo-wayuu {
+  .info-wayuu__informacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60vh;
+    
+    .informacion-mochilas__wayuu {
+      .informacion-titulo__wayuu {
+        font-size: 3rem;
+        font-family: $fontTitulos;
       }
 
+      .informacion__texto {
+        font-size: 2rem;
+        font-family: $fontTexto;
+        text-align: justify;
+        padding: 2.5rem 0px;
+      }
+    }
+    .informacion-mochilas__wayuu:nth-child(2) {
+      flex: 1 1 50%;
+    }
+  }
+}
+
+//estilos seccion que permite ir a la tienda virtual
+.contenedor-miTienda {
+
+  .miTienda-titulo__wayuu{
+   
+    font-size: 2.5rem;
+    font-family: $fontTitulos;
+    text-align: center;
+    padding: 1.5rem;
+    
+  }
+  .contenedor-galeria__tienda {
+    display: grid;
+    height: 50vh;
+    grid-template-columns: repeat(5, 2fr);
+    grid-template-rows: 280px;
+    gap: 1rem;
   
-      @media screen and (min-width: 460px) {
-
-        .galeria__card{
-
-          grid-template-columns: repeat(2, 1fr);
-          grid-template-rows: 340px 340px 340px;
-          gap: 1rem;
-
-        }
-        
+    .galeria--img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0.6rem;
+      margin-top: 3rem;
+      &:hover {
+        filter: brightness(40%);
+        transition: all 0.5s;
+        text-align: center;
       }
-      @media screen and (min-width: 680px) {
+    }
+  }
+}
 
-        .galeria__card{
+@media screen and (min-width: 460px) {
+  .galeria__card {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 340px 340px 340px;
+    gap: 1rem;
+  }
+}
+@media screen and (min-width: 680px) {
+  .galeria__card {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 340px 340px 340px;
+    gap: 1rem;
 
-          grid-template-columns: repeat(3, 1fr);
-          grid-template-rows: 340px 340px 340px;
-          gap: 1rem;
+    .card-imagenes:nth-child(6) {
+      grid-column: 3 / 4;
+      grid-row: 2 / 4;
+    }
+  }
+}
 
-          .card-imagenes:nth-child(6){
-            grid-column: 3 / 4 ;
-            grid-row: 2 / 4;
-          }
+@media screen and (min-width: 980px) {
+  .galeria__card {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 340px 340px 340px;
+    gap: 1rem;
 
-        }
-        
-      }
+    .card-imagenes:nth-child(1) {
+      grid-row: 1 / 3;
+    }
+    .card-imagenes:nth-child(3) {
+      grid-column: 3 / 5;
+    }
+    .card-imagenes:nth-child(4) {
+      grid-column: 3 / 5;
+      grid-row: 3 / 4;
+    }
+    .card-imagenes:nth-child(5) {
+      grid-row: 3 / 4;
+    }
 
-      @media screen and (min-width: 980px) {
-
-        .galeria__card{
-
-          grid-template-columns: repeat(4, 1fr);
-          grid-template-rows: 340px 340px 340px;
-          gap: 1rem;
-
-          .card-imagenes:nth-child(1){
-            grid-row: 1 / 3;
-          }
-          .card-imagenes:nth-child(3){
-            grid-column: 3 / 5;
-            
-          }
-          .card-imagenes:nth-child(4){
-            grid-column: 3 / 5;
-            grid-row: 3 / 4;
-          }
-          .card-imagenes:nth-child(5){
-            grid-row: 3 / 4;
-          }
-
-          .card-imagenes:nth-child(6){
-            grid-column: 2 / 3;
-            grid-row: 2 / 4;
-          }
-          
-
-
-        }
-        
-      }
-
-      
-      
-
-      
+    .card-imagenes:nth-child(6) {
+      grid-column: 2 / 3;
+      grid-row: 2 / 4;
+    }
+  }
+}
