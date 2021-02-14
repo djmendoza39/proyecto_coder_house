@@ -293,7 +293,7 @@ li {
       background-color: #629E85; }
 
 .section-galeria {
-  padding: 1.5rem; }
+  padding: 1rem; }
   .section-galeria .galeria__card {
     display: grid;
     gap: 1rem; }
@@ -308,49 +308,51 @@ li {
         text-align: center; }
 
 .contenedor-informativo-wayuu .info-wayuu__informacion {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 60vh; }
+  height: auto;
+  padding: 1rem; }
   .contenedor-informativo-wayuu .info-wayuu__informacion .informacion-mochilas__wayuu .informacion-titulo__wayuu {
-    font-size: 3rem;
+    font-size: calc(2em + 1vw);
     font-family: "Arvo", serif; }
   .contenedor-informativo-wayuu .info-wayuu__informacion .informacion-mochilas__wayuu .informacion__texto {
     font-size: 2rem;
     font-family: "Libre Baskerville", serif;
     text-align: justify;
     padding: 2.5rem 0px; }
-  .contenedor-informativo-wayuu .info-wayuu__informacion .informacion-mochilas__wayuu:nth-child(2) {
-    flex: 1 1 50%; }
 
-.contenedor-miTienda .miTienda-titulo__wayuu {
-  font-size: 2.5rem;
+.contenedor-ecommers .contenedor-miTienda .miTienda-titulo__wayuu {
+  font-size: calc(2em + 1vw);
   font-family: "Arvo", serif;
   text-align: center;
   padding: 1.5rem; }
 
-.contenedor-miTienda .contenedor-galeria__tienda {
-  display: grid;
-  height: 50vh;
-  grid-template-columns: repeat(5, 2fr);
-  grid-template-rows: 280px;
-  gap: 1rem; }
-  .contenedor-miTienda .contenedor-galeria__tienda .galeria--img {
+.contenedor-ecommers .contenedor-miTienda .contenedor-galeria__tienda {
+  padding: 1rem;
+  height: auto; }
+  .contenedor-ecommers .contenedor-miTienda .contenedor-galeria__tienda .galeria--img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 0.6rem;
-    margin-top: 3rem; }
-    .contenedor-miTienda .contenedor-galeria__tienda .galeria--img:hover {
+    border-radius: 0.6rem; }
+    .contenedor-ecommers .contenedor-miTienda .contenedor-galeria__tienda .galeria--img:hover {
       filter: brightness(40%);
       transition: all 0.5s;
       text-align: center; }
 
+@media screen and (min-width: 330px) {
+  .contenedor-galeria__tienda {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 180px;
+    gap: 1rem; } }
+
 @media screen and (min-width: 460px) {
   .galeria__card {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 2fr);
     grid-template-rows: 340px 340px 340px;
-    gap: 1rem; } }
+    gap: 1rem; }
+  .contenedor-galeria__tienda {
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 280px; } }
 
 @media screen and (min-width: 680px) {
   .galeria__card {
@@ -359,7 +361,10 @@ li {
     gap: 1rem; }
     .galeria__card .card-imagenes:nth-child(6) {
       grid-column: 3 / 4;
-      grid-row: 2 / 4; } }
+      grid-row: 2 / 4; }
+  .contenedor-galeria__tienda {
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: 380px; } }
 
 @media screen and (min-width: 980px) {
   .galeria__card {
@@ -377,7 +382,18 @@ li {
       grid-row: 3 / 4; }
     .galeria__card .card-imagenes:nth-child(6) {
       grid-column: 2 / 3;
-      grid-row: 2 / 4; } }
+      grid-row: 2 / 4; }
+  .info-wayuu__informacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding: 1rem; }
+    .info-wayuu__informacion .informacion-mochilas__wayuu:nth-child(2) {
+      flex: 1 1 50%; }
+  .contenedor-galeria__tienda {
+    grid-template-columns: repeat(5, 2fr);
+    grid-template-rows: 380px; } }
 
 /* seccion ----------------------------------------------------- quienes somos */
 .alto-jumbotron-quienes {
