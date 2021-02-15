@@ -79,7 +79,7 @@
       }
 
       .informacion__texto {
-        font-size: 2rem;
+        //font-size: 2rem;
         font-family: $fontTexto;
         text-align: justify;
         padding: 2.5rem 0px;
@@ -95,7 +95,7 @@
   .contenedor-miTienda {
     .miTienda-titulo__wayuu{
      
-      font-size: calc(2em + 1vw);
+      //font-size: calc(2em + 1vw);
       font-family: $fontTitulos;
       text-align: center;
       padding: 1.5rem;
@@ -147,11 +147,8 @@
     
   
   }
-
-
-
-
 }
+
 @media screen and (min-width: 680px) {
   .galeria__card {
     grid-template-columns: repeat(3, 1fr);

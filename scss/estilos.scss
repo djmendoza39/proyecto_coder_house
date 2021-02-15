@@ -34,6 +34,12 @@ $color-secondary-2-4: #126542;
 
 }
 
+h1, h2, h3, h4, h5, h6{
+  font-family: $fontTitulos;
+  font-weight: 500;
+  font-size: calc(2em + 1vw);
+}
+
 .container{
   margin: 0 auto;
   max-width: 1250px;
@@ -48,7 +54,7 @@ $color-secondary-2-4: #126542;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  //font-size: 16px;
   cursor: pointer;
   &:hover{
     background-color: $color-secondary-2-3 ;

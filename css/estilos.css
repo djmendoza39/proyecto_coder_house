@@ -5,6 +5,11 @@
   margin: 0;
   padding: 0; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Arvo", serif;
+  font-weight: 500;
+  font-size: calc(2em + 1vw); }
+
 .container {
   margin: 0 auto;
   max-width: 1250px; }
@@ -18,7 +23,6 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
   cursor: pointer; }
   .button:hover {
     background-color: #368362; }
@@ -144,14 +148,11 @@ li {
   padding: 3rem;
   text-align: center; }
   .titulo-responsivo .responsivo__titulo1 {
-    font-size: calc(2em + 1vw);
     color: white;
     text-shadow: 1px 1px 2px black, 0 0 25px #95BCAB, 0 0 5px #176294; }
 
 .contenedor-informacion .flex__contenedor-1 .flex__contenedor-contenido {
   padding: 1.5rem; }
-  .contenedor-informacion .flex__contenedor-1 .flex__contenedor-contenido .contenedor__titulo {
-    font-size: 2.5rem; }
   .contenedor-informacion .flex__contenedor-1 .flex__contenedor-contenido > * {
     padding: 1rem;
     text-align: justify; }
@@ -170,8 +171,7 @@ li {
   padding-top: 2.5rem; }
   .contenedor-informacion .flex-contenedor-2 > h2 {
     padding: 1.5rem;
-    text-align: center;
-    font-size: 3.5rem; }
+    text-align: center; }
   .contenedor-informacion .flex-contenedor-2 .contenido-flex__contenedor-2 {
     display: flex;
     justify-content: center;
@@ -201,8 +201,6 @@ li {
 
 .contenedor-informacion .flex__contenedor-3 .flex__contenedor-contenido {
   padding: 1.5rem; }
-  .contenedor-informacion .flex__contenedor-3 .flex__contenedor-contenido .contenedor__titulo-3 {
-    font-size: 1.8rem; }
   .contenedor-informacion .flex__contenedor-3 .flex__contenedor-contenido > * {
     padding: 1rem;
     text-align: justify; }
@@ -215,32 +213,6 @@ li {
   background-size: cover;
   height: 80vh;
   width: 100%; }
-
-.section-figura {
-  background-image: url(https://www.eltiempo.com/uploads/2018/01/26/5a6bcf8f5f050.jpeg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 80vh; }
-
-.section-figura__titulo {
-  cursor: default;
-  height: 100px;
-  margin: auto;
-  display: block;
-  animation: texto 0.3s ease infinite alternate;
-  font-family: "Libre Baskerville", serif;
-  font-size: 50px;
-  color: #fff;
-  text-align: center;
-  line-height: 400px;
-  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.6); }
-
-@keyframes texto {
-  100% {
-    top: -30px;
-    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc, 0 30px 30px rgba(0, 0, 0, 0.3); } }
 
 @media screen and (min-width: 960px) {
   .flex__contenedor-1 {
@@ -315,13 +287,11 @@ li {
     font-size: calc(2em + 1vw);
     font-family: "Arvo", serif; }
   .contenedor-informativo-wayuu .info-wayuu__informacion .informacion-mochilas__wayuu .informacion__texto {
-    font-size: 2rem;
     font-family: "Libre Baskerville", serif;
     text-align: justify;
     padding: 2.5rem 0px; }
 
 .contenedor-ecommers .contenedor-miTienda .miTienda-titulo__wayuu {
-  font-size: calc(2em + 1vw);
   font-family: "Arvo", serif;
   text-align: center;
   padding: 1.5rem; }
@@ -397,15 +367,15 @@ li {
     grid-template-rows: 380px; } }
 
 /* seccion ----------------------------------------------------- quienes somos */
-.alto-jumbotron-quienes {
+.seccion-contenido-slider {
   background-image: url(https://www.colombiatudestino.com/colombia/laguajira/laguajira/images/images7_big.jpg);
   background-repeat: no-repeat repeat;
   background-size: cover;
   background-position: center center;
-  height: 55vh;
+  height: 75vh;
   margin-bottom: 0;
   position: relative; }
-  .alto-jumbotron-quienes::before {
+  .seccion-contenido-slider::before {
     background-color: rgba(0, 0, 0, 0.6);
     content: "";
     left: 0;
@@ -413,36 +383,55 @@ li {
     top: 0;
     right: 0;
     position: absolute; }
-  .alto-jumbotron-quienes h1 {
-    font-size: 3vw;
+  .seccion-contenido-slider h1 {
+    color: white;
+    text-align: center;
+    font-size: calc(2rem + 1vw);
     text-transform: capitalize;
     top: 19vh;
-    position: relative; }
+    position: relative;
+    padding: .7rem; }
 
-.col-lg-4 {
-  text-align: center; }
+.contenido-quienes-somos {
+  padding: 1rem; }
+  .contenido-quienes-somos .contenido-valores__compromiso .contenido__titulo {
+    margin-bottom: 1rem; }
+  .contenido-quienes-somos .contenido-valores__compromiso .contenido__texto {
+    text-align: justify;
+    margin-bottom: 1rem; }
+  .contenido-quienes-somos .contenido-servicio .contenido-servicio__titulo {
+    margin-bottom: 1rem; }
+  .contenido-quienes-somos .contenido-servicio .contenido-servicio__imagen {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+    .contenido-quienes-somos .contenido-servicio .contenido-servicio__imagen .contenido-servicio--img {
+      border-radius: .4rem;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .contenido-quienes-somos .division--contenidos {
+    margin-bottom: 1rem;
+    color: antiquewhite; }
 
-.row__margin {
-  padding-top: 6rem;
-  padding-bottom: 3rem; }
+@media screen and (min-width: 680px) {
+  .flex-servicios .contenido-servicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .flex-servicios .contenido-servicio .flex-contenido-servicios {
+      display: flex;
+      flex-direction: column; } }
 
-.col-lg-4 img {
-  object-position: center center;
-  object-fit: cover; }
-
-.img-objetivos img {
-  object-fit: cover;
-  object-position: center center; }
-
-.contacto--boton {
-  border: none;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  width: 10%; }
-  .contacto--boton:hover {
-    background-color: #f6ac6f;
-    color: #e9ecef;
-    font-weight: 500; }
+@media screen and (min-width: 980px) {
+  .contenido-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .contenido-flex .contenido-valores__compromiso {
+      padding: 1rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem; } }
 
 /*formulario contactanos seccion------------------------------ */
 .flex-contactanos {

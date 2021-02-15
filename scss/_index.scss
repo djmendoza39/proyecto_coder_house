@@ -69,7 +69,6 @@
   padding: 3rem;
   text-align: center;
   .responsivo__titulo1{
-    font-size: calc(2em + 1vw);
     color: white;
     text-shadow: 1px 1px 2px black, 0 0 25px $color-secondary-2-2, 0 0 5px #176294;
     
@@ -82,10 +81,6 @@
   .flex__contenedor-1 {
     .flex__contenedor-contenido {
       padding: 1.5rem;
-      .contenedor__titulo {
-        font-size: 2.5rem;
-        
-      }
       & > * {
         padding: 1rem;
         text-align: justify;
@@ -107,7 +102,7 @@
     & > h2 {
       padding: 1.5rem;
       text-align: center;
-      font-size: 3.5rem;
+      
     }
     padding-top: 2.5rem;
     .contenido-flex__contenedor-2 {
@@ -145,9 +140,6 @@
   .flex__contenedor-3 {
     .flex__contenedor-contenido {
       padding: 1.5rem;
-      .contenedor__titulo-3 {
-        font-size: 1.8rem;
-      }
       & > * {
         padding: 1rem;
         text-align: justify;
@@ -166,40 +158,7 @@
 }
 //----------------------------------------------------------------------------------------------------
 
-.section-figura {
-  background-image: url(https://www.eltiempo.com/uploads/2018/01/26/5a6bcf8f5f050.jpeg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 80vh;
-}
 
-.section-figura__titulo {
-  cursor: default;
-  height: 100px;
-  margin: auto;
-  display: block;
-  animation: texto 0.3s ease infinite alternate; //animation
-  font-family: $fontTexto;
-  font-size: 50px;
-  color: #fff;
-  text-align: center;
-  line-height: 400px;
-  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
-    0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
-    0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.6);
-}
-
-@keyframes texto {
-  100% {
-    top: -30px;
-
-    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
-      0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
-      0 30px 30px rgba(0, 0, 0, 0.3);
-  }
-}
 
 //estilos responsive design
 
