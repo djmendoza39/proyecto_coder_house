@@ -55,79 +55,68 @@ li {
 /* <----------- cierre de estilos generales----------------- */
 .header {
   background-color: #FFEFCA; }
-  .header .header__nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; }
-    .header .header__nav .menu__bars {
-      margin-right: 1rem; }
-      .header .header__nav .menu__bars * > i {
-        font-size: 1.5rem;
-        padding: .5rem;
-        color: #d8bd95; }
-      .header .header__nav .menu__bars .modal {
-        background-color: rgba(0, 0, 0, 0.8);
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        opacity: 0;
-        pointer-events: none;
-        transition: all 0.5s;
-        z-index: 100; }
-        .header .header__nav .menu__bars .modal .modal-contenido {
-          background-color: rgba(0, 0, 0, 0.404);
-          width: 300px;
-          padding: 10px 20px;
-          margin: 20% auto;
-          position: relative; }
-          .header .header__nav .menu__bars .modal .modal-contenido .menu-boton {
-            display: flex;
-            flex-direction: column;
-            align-items: center; }
-            .header .header__nav .menu__bars .modal .modal-contenido .menu-boton > .menu-boton--link {
-              color: white;
-              font-size: 1.5rem;
-              text-decoration: none;
-              padding: 1rem; }
-            .header .header__nav .menu__bars .modal .modal-contenido .menu-boton .menu-boton--link:nth-child(1) {
-              display: flex;
-              align-self: flex-start; }
-      .header .header__nav .menu__bars #miModal:target {
-        opacity: 1;
-        pointer-events: auto; }
-    .header .header__nav .titulo1 {
-      font-size: 40px; }
-    .header .header__nav .header--nav-titulo {
-      color: #FFEFCA;
-      text-decoration: none;
-      text-transform: uppercase;
-      padding: 10px;
-      margin: 0;
-      display: inline-block;
-      font-weight: bold;
-      letter-spacing: -4px;
-      text-shadow: 0 8px 9px #d8bd95, 0px -2px 1px #176294; }
-    .header .header__nav .header__nav--link {
-      color: #421763;
-      display: block;
-      font-family: "Libre Baskerville", serif;
-      padding: 1.5rem;
-      text-decoration: none; }
-      .header .header__nav .header__nav--link:hover {
-        color: #176294; }
 
-@media screen and (min-width: 960px) {
-  .menu__bars {
-    display: none; }
-  .header__nav-menu .nav-menu__none {
-    display: flex; } }
-
-@media screen and (max-width: 960px) {
-  .header__nav-menu {
-    display: none; } }
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; }
+  .header__nav .header__nav-logo {
+    flex: 1 1 50%; }
+  .header__nav .menu__bars {
+    margin-right: 1rem; }
+    .header__nav .menu__bars * > i {
+      font-size: 1.5rem;
+      padding: 0.5rem;
+      color: #d8bd95; }
+  .header__nav .header__nav-menu {
+    flex: 1 1 100%;
+    position: fixed;
+    top: 68px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.76); }
+    .header__nav .header__nav-menu .nav-menu__none {
+      display: flex;
+      flex-direction: column;
+      opacity: .8;
+      position: relative;
+      cursor: pointer; }
+      .header__nav .header__nav-menu .nav-menu__none .header__nav--link {
+        color: #FFEFCA;
+        text-align: center; }
+        .header__nav .header__nav-menu .nav-menu__none .header__nav--link:hover {
+          background-color: #176294; }
+  .header__nav #miModal:target {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 30;
+    transition: all 1s; }
+  .header__nav .titulo1 {
+    font-size: 40px; }
+  .header__nav .header--nav-titulo {
+    color: #FFEFCA;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 0;
+    display: inline-block;
+    font-weight: bold;
+    letter-spacing: -4px;
+    text-shadow: 0 8px 9px #d8bd95, 0px -2px 1px #176294; }
+  .header__nav .header__nav--link {
+    color: #421763;
+    display: block;
+    font-family: "Libre Baskerville", serif;
+    padding: 1.5rem;
+    text-decoration: none; }
+    .header__nav .header__nav--link:hover {
+      color: #176294; }
 
 /* ------------------------------- seccion carousel -------------------------------------- */
 .seccion__slider {
