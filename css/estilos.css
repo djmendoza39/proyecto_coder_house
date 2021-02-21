@@ -408,17 +408,22 @@ li {
   padding: 1rem; }
   .contenido-quienes-somos .contenido-valores__compromiso .contenido__titulo {
     color: #421763;
-    text-shadow: 2px 2px 0 #AAA, 6px 6px 2px #777, 12px 12px 8px #444;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    text-align: center;
+    text-shadow: 2px 2px 0 #AAA, 6px 6px 2px #777, 12px 12px 8px #444; }
   .contenido-quienes-somos .contenido-valores__compromiso .contenido__texto {
     text-align: justify;
     margin-bottom: 1rem; }
-  .contenido-quienes-somos .contenido-servicio .contenido-servicio__titulo {
-    margin-bottom: 1rem; }
-  .contenido-quienes-somos .contenido-servicio .contenido-servicio__titulo {
-    color: black;
-    text-shadow: 1px 1px #666, 2px 2px #86D6D3, 3px 3px #666, 4px 4px #86D6D3; }
+  .contenido-quienes-somos .contenido-servicio .flex-contenido-servicios {
+    flex: 1 0 50%;
+    padding-right: 3rem; }
+    .contenido-quienes-somos .contenido-servicio .flex-contenido-servicios .contenido-servicio__titulo {
+      margin-bottom: 1rem; }
+    .contenido-quienes-somos .contenido-servicio .flex-contenido-servicios .contenido-servicio__titulo {
+      color: black;
+      text-shadow: 1px 1px #666, 2px 2px #86D6D3, 3px 3px #666, 4px 4px #86D6D3; }
   .contenido-quienes-somos .contenido-servicio .contenido-servicio__imagen {
+    order: 1;
     margin-top: 1rem;
     margin-bottom: 1rem; }
     .contenido-quienes-somos .contenido-servicio .contenido-servicio__imagen .contenido-servicio--img {
