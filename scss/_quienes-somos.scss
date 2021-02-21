@@ -1,41 +1,27 @@
 /* seccion ----------------------------------------------------- quienes somos */
-.seccion-contenido-slider {
-  background-image: url(https://www.colombiatudestino.com/colombia/laguajira/laguajira/images/images7_big.jpg);
-  background-repeat: no-repeat repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 75vh;
-  margin-bottom: 0;
-  position: relative;
+.img__slider{
+  background-image: url(https://seecolombia.travel/blog/wp-content/uploads/2016/05/2016-02-26-07.49.47-1-1024x768.jpg) !important;
+  .texto-slider{
+    padding-top: .8rem;
+  } 
+}
 
-  &::before {
-    background-color: rgba(0, 0, 0, 0.6);
-    content: "";
-    left: 0;
-    bottom: 0;
-    top: 0;
-    right: 0;
-    position: absolute;
-  }
+@media screen and(min-heigth: 340px){
 
-  h1 {
-    color: white;
-    text-align: center;
-    font-size: calc(2rem + 1vw);
-    text-transform: capitalize;
-    top: 19vh;
-    position: relative;
-    padding: .7rem;
-  }
 }
 
 //seccion contenido de quienes somos.html
 .contenido-quienes-somos {
   padding: 1rem;
-  
   .contenido-valores__compromiso {
     .contenido__titulo {
+      color: $color-secondary-1-4;
       margin-bottom: 1rem;
+      text-align: center;
+      text-shadow:
+      2px 2px 0 #AAA,
+      6px 6px 2px #777,
+      12px 12px 8px #444;
     }
     .contenido__texto {
       text-align: justify;
@@ -44,10 +30,20 @@
   }
 
   .contenido-servicio {
-    .contenido-servicio__titulo{
-      margin-bottom: 1rem;
+    
+    .flex-contenido-servicios{
+      flex: 1 0 50%;
+      padding-right: 3rem;
+      .contenido-servicio__titulo{
+        margin-bottom: 1rem;
+      }
+      .contenido-servicio__titulo{
+        color: rgb(0, 0, 0);
+        text-shadow: 1px 1px #666, 2px 2px #86D6D3, 3px 3px #666, 4px 4px #86D6D3;
+      }
     }
     .contenido-servicio__imagen {
+      order: 1;
       margin-top: 1rem;
       margin-bottom: 1rem;
       .contenido-servicio--img {
@@ -59,6 +55,7 @@
       }
     }
   }
+  
 
   .division--contenidos{
     margin-bottom: 1rem;

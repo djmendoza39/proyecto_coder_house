@@ -33,8 +33,6 @@
     background-color: rgba(0, 0, 0, 0.76);
     
     .nav-menu__none {
-      display: flex;
-      flex-direction: column;
       opacity: .8;
       position: relative;
       cursor: pointer;
@@ -85,6 +83,16 @@
   }
 }
 
+@media screen and(min-width: 680px){
+  .header__nav-menu{
+    .nav-menu__none{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  }
+
+}
 
 
 

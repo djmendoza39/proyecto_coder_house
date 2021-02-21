@@ -82,8 +82,6 @@ li {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.76); }
     .header__nav .header__nav-menu .nav-menu__none {
-      display: flex;
-      flex-direction: column;
       opacity: .8;
       position: relative;
       cursor: pointer; }
@@ -117,6 +115,12 @@ li {
     text-decoration: none; }
     .header__nav .header__nav--link:hover {
       color: #176294; }
+
+@media screen and (min-width: 680px) {
+  .header__nav-menu .nav-menu__none {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; } }
 
 /* ------------------------------- seccion carousel -------------------------------------- */
 .seccion__slider {
@@ -249,7 +253,7 @@ li {
       order: 2; } }
 
 /* --------------------------------------------- seccion catalogo ----------------------------------------- */
-.alto-jumbotron {
+.section-slide {
   align-items: center;
   background-image: url(https://colombia.travel/sites/default/files/inline-images/xLos-tejidos-Way,PC3,PBAu_-lo-mejor-del-crochet---Cortesia-Mario-Carvajal-www.mariocarvajal.jpg.pagespeed.ic.Je2ROLAKQF.jpg);
   background-repeat: no-repeat repeat;
@@ -257,11 +261,12 @@ li {
   background-position: center center;
   background-attachment: fixed;
   display: flex;
-  height: 75vh;
   justify-content: center;
+  align-items: center;
+  height: 75vh;
   margin-bottom: 0;
   position: relative; }
-  .alto-jumbotron::before {
+  .section-slide::before {
     background-color: rgba(0, 0, 0, 0.6);
     bottom: 0;
     content: "";
@@ -269,21 +274,28 @@ li {
     right: 0;
     top: 0;
     position: absolute; }
-  .alto-jumbotron .alto-jumbotrom__container--titulo,
-  .alto-jumbotron .alto-jumbotrom__container--parrafo,
-  .alto-jumbotron .alto-jumbotrom__container--boton {
-    font-weight: 500;
-    position: relative; }
-  .alto-jumbotron .btn--llamanos {
-    background-color: #623a80;
-    border: none; }
-    .alto-jumbotron .btn--llamanos:hover {
-      background-color: #623A80; }
-  .alto-jumbotron .btn--boton {
-    background-color: #623A80;
-    color: #FFEFCA; }
-    .alto-jumbotron .btn--boton:hover {
-      background-color: #629E85; }
+  .section-slide .contenido-slide {
+    color: #FFEFCA;
+    line-height: 6vh;
+    text-align: center;
+    z-index: 1; }
+    .section-slide .contenido-slide .slide--titulo {
+      text-shadow: 1px 1px #A995B9, -1px -1px #333;
+      font-size: calc(3em + 2vw); }
+    .section-slide .contenido-slide .contenido-slide--boton {
+      background: rgba(0, 0, 0, 0);
+      border-color: #FFEFCA;
+      border: 2px solid;
+      color: #FFEFCA;
+      font-size: 20px;
+      font-weight: 500;
+      padding: 0.5em 1.2em;
+      transition: all 1s ease;
+      text-decoration: none; }
+      .section-slide .contenido-slide .contenido-slide--boton:hover {
+        background-color: #E7CC8F;
+        color: #421763;
+        transition: all 1s; }
 
 .section-galeria {
   padding: 1rem; }
@@ -387,41 +399,31 @@ li {
     grid-template-rows: 380px; } }
 
 /* seccion ----------------------------------------------------- quienes somos */
-.seccion-contenido-slider {
-  background-image: url(https://www.colombiatudestino.com/colombia/laguajira/laguajira/images/images7_big.jpg);
-  background-repeat: no-repeat repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 75vh;
-  margin-bottom: 0;
-  position: relative; }
-  .seccion-contenido-slider::before {
-    background-color: rgba(0, 0, 0, 0.6);
-    content: "";
-    left: 0;
-    bottom: 0;
-    top: 0;
-    right: 0;
-    position: absolute; }
-  .seccion-contenido-slider h1 {
-    color: white;
-    text-align: center;
-    font-size: calc(2rem + 1vw);
-    text-transform: capitalize;
-    top: 19vh;
-    position: relative;
-    padding: .7rem; }
+.img__slider {
+  background-image: url(https://seecolombia.travel/blog/wp-content/uploads/2016/05/2016-02-26-07.49.47-1-1024x768.jpg) !important; }
+  .img__slider .texto-slider {
+    padding-top: .8rem; }
 
 .contenido-quienes-somos {
   padding: 1rem; }
   .contenido-quienes-somos .contenido-valores__compromiso .contenido__titulo {
-    margin-bottom: 1rem; }
+    color: #421763;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-shadow: 2px 2px 0 #AAA, 6px 6px 2px #777, 12px 12px 8px #444; }
   .contenido-quienes-somos .contenido-valores__compromiso .contenido__texto {
     text-align: justify;
     margin-bottom: 1rem; }
-  .contenido-quienes-somos .contenido-servicio .contenido-servicio__titulo {
-    margin-bottom: 1rem; }
+  .contenido-quienes-somos .contenido-servicio .flex-contenido-servicios {
+    flex: 1 0 50%;
+    padding-right: 3rem; }
+    .contenido-quienes-somos .contenido-servicio .flex-contenido-servicios .contenido-servicio__titulo {
+      margin-bottom: 1rem; }
+    .contenido-quienes-somos .contenido-servicio .flex-contenido-servicios .contenido-servicio__titulo {
+      color: black;
+      text-shadow: 1px 1px #666, 2px 2px #86D6D3, 3px 3px #666, 4px 4px #86D6D3; }
   .contenido-quienes-somos .contenido-servicio .contenido-servicio__imagen {
+    order: 1;
     margin-top: 1rem;
     margin-bottom: 1rem; }
     .contenido-quienes-somos .contenido-servicio .contenido-servicio__imagen .contenido-servicio--img {
