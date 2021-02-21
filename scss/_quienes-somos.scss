@@ -1,32 +1,9 @@
 /* seccion ----------------------------------------------------- quienes somos */
-.seccion-contenido-slider {
-  background-image: url(https://www.colombiatudestino.com/colombia/laguajira/laguajira/images/images7_big.jpg);
-  background-repeat: no-repeat repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 75vh;
-  margin-bottom: 0;
-  position: relative;
-
-  &::before {
-    background-color: rgba(0, 0, 0, 0.6);
-    content: "";
-    left: 0;
-    bottom: 0;
-    top: 0;
-    right: 0;
-    position: absolute;
-  }
-
-  h1 {
-    color: white;
-    text-align: center;
-    font-size: calc(2rem + 1vw);
-    text-transform: capitalize;
-    top: 19vh;
-    position: relative;
-    padding: .7rem;
-  }
+.img__slider{
+  background-image: url(https://seecolombia.travel/blog/wp-content/uploads/2016/05/2016-02-26-07.49.47-1-1024x768.jpg) !important;
+  .texto-slider{
+    padding-top: .8rem;
+  } 
 }
 
 //seccion contenido de quienes somos.html
