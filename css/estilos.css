@@ -253,7 +253,7 @@ li {
       order: 2; } }
 
 /* --------------------------------------------- seccion catalogo ----------------------------------------- */
-.alto-jumbotron {
+.section-slide {
   align-items: center;
   background-image: url(https://colombia.travel/sites/default/files/inline-images/xLos-tejidos-Way,PC3,PBAu_-lo-mejor-del-crochet---Cortesia-Mario-Carvajal-www.mariocarvajal.jpg.pagespeed.ic.Je2ROLAKQF.jpg);
   background-repeat: no-repeat repeat;
@@ -261,11 +261,12 @@ li {
   background-position: center center;
   background-attachment: fixed;
   display: flex;
-  height: 75vh;
   justify-content: center;
+  align-items: center;
+  height: 75vh;
   margin-bottom: 0;
   position: relative; }
-  .alto-jumbotron::before {
+  .section-slide::before {
     background-color: rgba(0, 0, 0, 0.6);
     bottom: 0;
     content: "";
@@ -273,21 +274,28 @@ li {
     right: 0;
     top: 0;
     position: absolute; }
-  .alto-jumbotron .alto-jumbotrom__container--titulo,
-  .alto-jumbotron .alto-jumbotrom__container--parrafo,
-  .alto-jumbotron .alto-jumbotrom__container--boton {
-    font-weight: 500;
-    position: relative; }
-  .alto-jumbotron .btn--llamanos {
-    background-color: #623a80;
-    border: none; }
-    .alto-jumbotron .btn--llamanos:hover {
-      background-color: #623A80; }
-  .alto-jumbotron .btn--boton {
-    background-color: #623A80;
-    color: #FFEFCA; }
-    .alto-jumbotron .btn--boton:hover {
-      background-color: #629E85; }
+  .section-slide .contenido-slide {
+    color: #FFEFCA;
+    line-height: 6vh;
+    text-align: center;
+    z-index: 1; }
+    .section-slide .contenido-slide .slide--titulo {
+      text-shadow: 1px 1px #A995B9, -1px -1px #333;
+      font-size: calc(3em + 2vw); }
+    .section-slide .contenido-slide .contenido-slide--boton {
+      background: rgba(0, 0, 0, 0);
+      border-color: #FFEFCA;
+      border: 2px solid;
+      color: #FFEFCA;
+      font-size: 20px;
+      font-weight: 500;
+      padding: 0.5em 1.2em;
+      transition: all 1s ease;
+      text-decoration: none; }
+      .section-slide .contenido-slide .contenido-slide--boton:hover {
+        background-color: #E7CC8F;
+        color: #421763;
+        transition: all 1s; }
 
 .section-galeria {
   padding: 1rem; }
