@@ -44,7 +44,7 @@
   }
 }
 
-//seccion catalogo card
+//seccion catalogo card-----------------------------------------
 .section-galeria {
   padding: 1rem;
   .galeria__card {
@@ -66,7 +66,7 @@
   }
 }
 
-//seccion informativa sobre las mochilas wayúu
+//seccion informativa sobre las mochilas wayúu------------------------
 .contenedor-informativo-wayuu {
   .info-wayuu__informacion {
     height: auto;
@@ -120,6 +120,7 @@
   }
 }
 
+//media querys---------------------------------------------- 
 @media screen and (min-width: 330px) {
 
   .contenedor-galeria__tienda {
@@ -216,9 +217,5 @@
     
   
   }
-
-
-
-
 
 }
