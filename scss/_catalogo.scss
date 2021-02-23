@@ -31,6 +31,7 @@
     .slide--titulo {
       text-shadow: 1px 1px $color-secondary-1-2, -1px -1px #333;
       font-size: calc(3em + 2vw);
+      line-height: 3.5rem;
     }
     .contenido-slide--boton {
       background: rgba(0, 0, 0, 0);
@@ -174,48 +175,56 @@
 }
 
 //galeria
-.imagenes-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: 380px 380px 380px 380px;
-  gap: 1rem;
-  padding: 1rem;
-  .contenedor-imagenes {
-    position: relative;
-    box-shadow: 5px 10px 8px #888888;
-    .imagenes--img {
-      width: 100%;
-      height: 100%;
-      object-fit: fill;
-      position: absolute;
-     
-      transform: translate(0px, 0px) scale(1);
-      transition: all 500ms ease-in-out;
-      &:hover {
-        filter: brightness(90%);
-        transition: all 1s;
-        -webkit-transition: all 1s;
-        -moz-transition: all 1s;
-        -ms-transition: all 1s;
-        -o-transition: all 1s;
-        transform: translate(-50px, -50px) scale(0.5);
-        
-
+.galeria{
+  .galeria__titulo{
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  .imagenes-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 380px 380px 380px 380px;
+    gap: 1rem;
+    
+    padding: 1rem;
+    .contenedor-imagenes {
+      margin-bottom: 1.5rem;
+      box-shadow: 5px 10px 8px #888888;
+      position: relative;
+      .imagenes--img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        position: absolute;
+       
+        transform: translate(0px, 0px) scale(1);
+        transition: all 500ms ease-in-out;
+        &:hover {
+          filter: brightness(90%);
+          transition: all 1s;
+          -webkit-transition: all 1s;
+          -moz-transition: all 1s;
+          -ms-transition: all 1s;
+          -o-transition: all 1s;
+          transform: translate(-50px, -50px) scale(0.5);
+          
+  
+        }
       }
-    }
-
-    .img--link {
-      color: rgb(243, 168, 77);
-      display: block;
-      font-size: 20px;
-      font-family: $fontTexto;
-      height: 50%;
-      text-decoration: none;
-      top: 70%;
-      right: 0;
-      padding-right: 5px;
-      position: absolute;
-      z-index: -1;
+  
+      .img--link {
+        color: rgb(243, 168, 77);
+        display: block;
+        font-size: 20px;
+        font-family: $fontTexto;
+        height: 50%;
+        text-decoration: none;
+        top: 70%;
+        right: 0;
+        padding-right: 5px;
+        position: absolute;
+        z-index: -1;
+      }
     }
   }
 }
