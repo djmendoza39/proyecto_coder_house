@@ -58,11 +58,12 @@
   .slider__ul-flex {
     display: flex;
     justify-content: center;
+    padding-top: 1rem;
     .slider--miniatura {
-      height: 150px;
+      height: 100px;
       object-fit: cover;
       padding: 0.5rem;
-      width: 150px;
+      width: 100px;
       border-radius: 10px;
       &:hover{
         filter: brightness(50%);
@@ -74,11 +75,7 @@
 }
 //--------------------
 
-
-/* --------------------------------------------------------- fin de la seccion del contenedor carousel ---------------------------------------------------- */
-
 .titulo-responsivo {
-  margin: 1rem 0px;
   padding: 3rem;
   text-align: center;
   .responsivo__titulo1 {
@@ -92,10 +89,10 @@
 .contenedor-informacion {
   .flex__contenedor-1 {
     .flex__contenedor-contenido {
-      padding: 1.5rem;
+     
       & > * {
         padding: 1rem;
-        text-align: justify;
+        //text-align: justify;
       }
     }
     .contenedor--imagen {
@@ -150,7 +147,7 @@
 
   .flex__contenedor-3 {
     .flex__contenedor-contenido {
-      padding: 1.5rem;
+      
       & > * {
         padding: 1rem;
         text-align: justify;
