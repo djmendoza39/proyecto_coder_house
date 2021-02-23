@@ -1,58 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap");
-/*Estilos Generales*/
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Arvo", serif;
-  font-weight: 500;
-  font-size: calc(2em + 1vw); }
-
-.container {
-  margin: 0 auto;
-  max-width: 1250px; }
-
-.button {
-  background-color: #421763;
-  border: none;
-  color: white;
-  padding: 1.5rem;
-  margin: 1rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer; }
-  .button:hover {
-    background-color: #368362; }
-
-.titulo1 {
-  font-family: "Arvo", serif; }
-
-.titulo2 {
-  font-family: "Arvo", serif; }
-
-.titulo3 {
-  font-family: "Arvo", serif; }
-
-.titulo4 {
-  font-family: "Arvo", serif; }
-
-.titulo5 {
-  font-family: "Arvo", serif; }
-
-.titulo6 {
-  font-family: "Arvo", serif; }
-
-p {
-  font-family: "Libre Baskerville", serif;
-  font-size: 16px !important; }
-
-li {
-  list-style: none; }
-
-/* <----------- cierre de estilos generales----------------- */
 .header {
   background-color: #FFEFCA;
   position: fixed;
@@ -539,3 +485,58 @@ li {
     font-size: 15px;
     text-decoration: none;
     padding: .5rem; }
+
+/*Estilos Generales*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Arvo", serif;
+  font-weight: 500;
+  font-size: calc(2em + 1vw); }
+
+.container {
+  margin: 0 auto;
+  max-width: 1250px; }
+
+.button {
+  background-color: #421763;
+  border: none;
+  color: white;
+  padding: 1.5rem;
+  margin: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer; }
+  .button:hover {
+    background-color: #368362; }
+
+.titulo1 {
+  font-family: "Arvo", serif; }
+
+.titulo2 {
+  font-family: "Arvo", serif; }
+
+.titulo3 {
+  font-family: "Arvo", serif; }
+
+.titulo4 {
+  font-family: "Arvo", serif; }
+
+.titulo5 {
+  font-family: "Arvo", serif; }
+
+.titulo6 {
+  font-family: "Arvo", serif; }
+
+p {
+  font-family: "Libre Baskerville", serif;
+  font-size: 16px !important; }
+
+li {
+  list-style: none; }
+
+/* <----------- cierre de estilos generales----------------- */

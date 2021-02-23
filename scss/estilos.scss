@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+
+
 //variables
 $fontTitulos: "Arvo", serif;
 $fontTexto: "Libre Baskerville", serif; 
@@ -23,6 +25,13 @@ $color-secondary-2-1: #CEDDD7;
 $color-secondary-2-2: #95BCAB;
 $color-secondary-2-3: #368362;
 $color-secondary-2-4: #126542;
+
+@import "header";
+@import "index";
+@import "catalogo";
+@import "quienes-somos";
+@import "mi-tienda";
+@import "footer";
 
 
 /*Estilos Generales*/
@@ -80,12 +89,7 @@ li {
 /* <----------- cierre de estilos generales----------------- */
 
 
-@import "header";
-@import "index";
-@import "catalogo";
-@import "quienes-somos";
-@import "mi-tienda";
-@import "footer";
+
 
 
 
