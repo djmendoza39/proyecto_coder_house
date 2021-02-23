@@ -35,17 +35,18 @@
     opacity: 0;
     pointer-events: none;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.76);
+    background-color: rgba(0, 0, 0, 0.541);
     
     .nav-menu__none {
-      opacity: .8;
+      opacity: 1;
       position: relative;
+      z-index: 5;
       cursor: pointer;
       .header__nav--link {
-        color: $color-primary;
+        color: white;
         text-align: center;
         &:hover {
-          background-color: #176294;
+          color: aliceblue;
         }
       }
     }
