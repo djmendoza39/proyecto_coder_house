@@ -51,7 +51,7 @@
   }
 }
 
-//seccion catalogo card-----------------------------------------
+//seccion catalogo galerias-----------------------------------------
 .section-galeria {
   padding: 1rem;
   .galeria__card {
@@ -72,7 +72,7 @@
     }
   }
 }
-
+//------media querys----------------------------------
 @media screen and (min-width: 330px) {
   .contenedor-galeria__tienda {
     display: grid;
@@ -147,7 +147,7 @@
   
 }
 
-//-----------------------------------------------------
+//--fin catalogo galerias---------------------------------------------------
 
 
 
@@ -219,6 +219,7 @@
     }
   }
 }
+//media querys-----img-galeria-----------------------------------------
 @media screen and(min-width: 460px){
 
   .imagenes-grid{
