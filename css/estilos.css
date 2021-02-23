@@ -295,7 +295,8 @@ li {
     z-index: 1; }
     .section-slide .contenido-slide .slide--titulo {
       text-shadow: 1px 1px #A995B9, -1px -1px #333;
-      font-size: calc(3em + 2vw); }
+      font-size: calc(3em + 2vw);
+      line-height: 3.5rem; }
     .section-slide .contenido-slide .contenido-slide--boton {
       background: rgba(0, 0, 0, 0);
       border-color: #FFEFCA;
@@ -385,23 +386,28 @@ li {
     text-align: justify;
     padding: 2.5rem 0px; }
 
-.imagenes-grid {
+.galeria .galeria__titulo {
+  margin-bottom: 1rem;
+  padding: 1rem; }
+
+.galeria .imagenes-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: 380px 380px 380px 380px;
   gap: 1rem;
   padding: 1rem; }
-  .imagenes-grid .contenedor-imagenes {
-    position: relative;
-    box-shadow: 5px 10px 8px #888888; }
-    .imagenes-grid .contenedor-imagenes .imagenes--img {
+  .galeria .imagenes-grid .contenedor-imagenes {
+    margin-bottom: 1.5rem;
+    box-shadow: 5px 10px 8px #888888;
+    position: relative; }
+    .galeria .imagenes-grid .contenedor-imagenes .imagenes--img {
       width: 100%;
       height: 100%;
       object-fit: fill;
       position: absolute;
       transform: translate(0px, 0px) scale(1);
       transition: all 500ms ease-in-out; }
-      .imagenes-grid .contenedor-imagenes .imagenes--img:hover {
+      .galeria .imagenes-grid .contenedor-imagenes .imagenes--img:hover {
         filter: brightness(90%);
         transition: all 1s;
         -webkit-transition: all 1s;
@@ -409,7 +415,7 @@ li {
         -ms-transition: all 1s;
         -o-transition: all 1s;
         transform: translate(-50px, -50px) scale(0.5); }
-    .imagenes-grid .contenedor-imagenes .img--link {
+    .galeria .imagenes-grid .contenedor-imagenes .img--link {
       color: #f3a84d;
       display: block;
       font-size: 20px;
@@ -423,22 +429,22 @@ li {
       z-index: -1; }
 
 @media screen and (min-width: 460px) {
-  .imagenes-grid {
+  .galeria .imagenes-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 300px 300px; } }
 
 @media screen and (min-width: 680px) {
-  .imagenes-grid {
+  .galeria .imagenes-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 380px 380px; } }
 
 @media screen and (min-width: 880px) {
-  .imagenes-grid {
+  .galeria .imagenes-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 400px 400px; } }
 
 @media screen and (min-width: 990px) {
-  .imagenes-grid {
+  .galeria .imagenes-grid {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 350px; } }
 
