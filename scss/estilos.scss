@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+@import "header";
+@import "index";
+@import "catalogo";
+@import "quienes-somos";
+@import "mi-tienda";
+@import "footer";
+
+
 //variables
 $fontTitulos: "Arvo", serif;
 $fontTexto: "Libre Baskerville", serif; 
@@ -80,12 +88,7 @@ li {
 /* <----------- cierre de estilos generales----------------- */
 
 
-@import "header";
-@import "index";
-@import "catalogo";
-@import "quienes-somos";
-@import "mi-tienda";
-@import "footer";
+
 
 
 
