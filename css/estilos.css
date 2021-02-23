@@ -495,6 +495,8 @@ li {
       margin-bottom: 2rem; } }
 
 .footer {
+  color: #946F1A;
+  font-family: "Libre Baskerville", serif;
   text-align: center;
   background-color: #FFEFCA; }
   .footer .contenedor-footer {
@@ -503,16 +505,24 @@ li {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 35vh; }
+    height: auto; }
     .footer .contenedor-footer .footer__elementos-titulo > * {
       font-size: 1.3rem;
-      margin-top: 3.5rem; }
+      margin-top: 2rem; }
     .footer .contenedor-footer .footer__elementos-redes .footer__elementos-li {
       display: flex; }
+      .footer .contenedor-footer .footer__elementos-redes .footer__elementos-li .fa {
+        color: chocolate;
+        font-size: 20px; }
       .footer .contenedor-footer .footer__elementos-redes .footer__elementos-li > * {
         padding: .7rem;
-        margin: .5rem;
-        border: 2px solid black;
-        border-radius: 100%; }
+        margin: .5rem; }
     .footer .contenedor-footer * > span {
       font-size: .8rem; }
+  .footer .footer-sitios-web > a {
+    color: chocolate;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 15px;
+    text-decoration: none;
+    padding: .5rem; }
