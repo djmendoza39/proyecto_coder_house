@@ -85,16 +85,17 @@ li {
     opacity: 0;
     pointer-events: none;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.76); }
+    background-color: rgba(0, 0, 0, 0.541); }
     .header__nav .header__nav-menu .nav-menu__none {
-      opacity: .8;
+      opacity: 1;
       position: relative;
+      z-index: 5;
       cursor: pointer; }
       .header__nav .header__nav-menu .nav-menu__none .header__nav--link {
-        color: #FFEFCA;
+        color: white;
         text-align: center; }
         .header__nav .header__nav-menu .nav-menu__none .header__nav--link:hover {
-          background-color: #176294; }
+          color: aliceblue; }
   .header__nav #miModal:target {
     opacity: 1;
     pointer-events: auto;
