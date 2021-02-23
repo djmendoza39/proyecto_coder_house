@@ -157,6 +157,7 @@ li {
       .seccion-fondo .contenedor-img-fondo:nth-child(1) .slider-titulo-index .contenedor__titulo, .seccion-fondo .contenedor-img-fondo:nth-child(2) .slider-titulo-index .contenedor__titulo, .seccion-fondo .contenedor-img-fondo:nth-child(3) .slider-titulo-index .contenedor__titulo {
         color: #FFEFCA;
         font-size: calc(3em + 2vw);
+        text-align: center;
         text-shadow: 1px 1px #A995B9, -1px -1px #333; }
   .seccion-fondo .contenedor-img-fondo:nth-child(2) {
     background-image: url(../img/imagen-slider-2); }

@@ -29,6 +29,7 @@
       .contenedor__titulo{
         color: $color-primary;
         font-size: calc(3em + 2vw);
+        text-align: center;
         text-shadow: 1px 1px $color-secondary-1-2, -1px -1px #333;
       }
     
