@@ -230,34 +230,42 @@
 }
 //media querys-----img-galeria-----------------------------------------
 @media screen and(min-width: 460px){
-
-  .imagenes-grid{
+  .galeria{
+    .imagenes-grid{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 300px 300px;
-  }
+  }}
+  
 }
 
 @media screen and(min-width: 680px){
+  .galeria{
+    .imagenes-grid{
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 380px 380px;
+    }
 
-  .imagenes-grid{
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 380px 380px;
   }
+  
 }
 
 @media screen and(min-width: 880px){
+  .galeria{
+    .imagenes-grid{
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 400px 400px;
+    }
 
-  .imagenes-grid{
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 400px 400px;
   }
 }
 
 @media screen and(min-width: 990px){
+  .galeria{
+    .imagenes-grid{
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 350px;
+    }
 
-  .imagenes-grid{
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 350px;
   }
 }
 
