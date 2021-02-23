@@ -54,7 +54,12 @@ li {
 
 /* <----------- cierre de estilos generales----------------- */
 .header {
-  background-color: #FFEFCA; }
+  background-color: #FFEFCA;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10; }
 
 .header__nav {
   display: flex;

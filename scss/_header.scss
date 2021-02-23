@@ -1,5 +1,10 @@
 .header {
   background-color: $color-primary;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right:0 ;
+  z-index: 10;
 }
 .header__nav {
   display: flex;
