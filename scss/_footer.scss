@@ -1,6 +1,8 @@
 
 .footer {
     //background-image: linear-gradient(to right, $primary, #95BCAB);
+    color: $color-primary-4;
+    font-family: $fontTexto;
     text-align: center;
     background-color: $color-primary;
     .contenedor-footer{
@@ -9,12 +11,12 @@
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      height: 35vh;
+      height: auto;
       .footer__elementos-titulo{
       
         & > *{
           font-size: 1.3rem;
-          margin-top: 3.5rem ;
+          margin-top: 2rem;
         }
 
       }
@@ -24,12 +26,13 @@
         .footer__elementos-li{
           
           display: flex;
+          .fa{
+            color: rgb(210, 105, 30);
+            font-size: 20px;
+          }
           & > *{
             padding: .7rem;
             margin: .5rem;
-            border: 2px solid rgb(0, 0, 0);
-            border-radius: 100%;
-            
           }
 
         }
@@ -37,12 +40,22 @@
       }
 
       * > span{
-        font-size: .8rem;
+        font-size: .8rem;  
+      }
+       
+    }
+    
+    .footer-sitios-web{
+      & > a{
+        color: rgb(210, 105, 30);
+        display: inline-block;
+        font-weight: 400;
+        font-size: 15px;
+        text-decoration: none;
+        padding: .5rem;
+        
         
       }
-      
-      
-      
     }
   
     
