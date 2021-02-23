@@ -28,10 +28,9 @@
     line-height: 6vh;
     text-align: center;
     z-index: 1;
-    .slide--titulo{
+    .slide--titulo {
       text-shadow: 1px 1px $color-secondary-1-2, -1px -1px #333;
       font-size: calc(3em + 2vw);
-      
     }
     .contenido-slide--boton {
       background: rgba(0, 0, 0, 0);
@@ -51,8 +50,6 @@
     }
   }
 }
-
-
 
 //seccion catalogo card-----------------------------------------
 .section-galeria {
@@ -76,57 +73,6 @@
   }
 }
 
-//seccion informativa sobre las mochilas wayúu------------------------
-.contenedor-informativo-wayuu {
-  .info-wayuu__informacion {
-    height: auto;
-    padding: 1rem;
-
-    .informacion-mochilas__wayuu {
-      .informacion-titulo__wayuu {
-        font-size: calc(2em + 1vw);
-        font-family: $fontTitulos;
-      }
-
-      .informacion__texto {
-        //font-size: 2rem;
-        font-family: $fontTexto;
-        text-align: justify;
-        padding: 2.5rem 0px;
-      }
-    }
-  }
-}
-
-//estilos seccion que permite ir a la tienda virtual
-.contenedor-ecommers {
-  .contenedor-miTienda {
-    .miTienda-titulo__wayuu {
-      //font-size: calc(2em + 1vw);
-      font-family: $fontTitulos;
-      text-align: center;
-      padding: 1.5rem;
-    }
-    .contenedor-galeria__tienda {
-      padding: 1rem;
-      height: auto;
-      .galeria--img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 0.6rem;
-
-        &:hover {
-          filter: brightness(40%);
-          transition: all 0.5s;
-          text-align: center;
-        }
-      }
-    }
-  }
-}
-
-//media querys----------------------------------------------
 @media screen and (min-width: 330px) {
   .contenedor-galeria__tienda {
     display: grid;
@@ -143,10 +89,7 @@
     gap: 1rem;
   }
 
-  .contenedor-galeria__tienda {
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: 280px;
-  }
+  
 }
 
 @media screen and (min-width: 680px) {
@@ -161,10 +104,6 @@
     }
   }
 
-  .contenedor-galeria__tienda {
-    grid-template-columns: repeat(3, 2fr);
-    grid-template-rows: 380px;
-  }
 }
 
 @media screen and (min-width: 980px) {
@@ -205,8 +144,112 @@
     }
   }
 
-  .contenedor-galeria__tienda {
-    grid-template-columns: repeat(5, 2fr);
-    grid-template-rows: 380px;
+  
+}
+
+//-----------------------------------------------------
+
+
+
+//seccion informativa sobre las mochilas wayúu------------------------
+.contenedor-informativo-wayuu {
+  .info-wayuu__informacion {
+    height: auto;
+    padding: 1rem;
+
+    .informacion-mochilas__wayuu {
+      .informacion-titulo__wayuu {
+        font-size: calc(2em + 1vw);
+        font-family: $fontTitulos;
+      }
+
+      .informacion__texto {
+        //font-size: 2rem;
+        font-family: $fontTexto;
+        text-align: justify;
+        padding: 2.5rem 0px;
+      }
+    }
   }
 }
+
+//galeria
+.imagenes-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 380px 380px 380px 380px;
+  gap: 1rem;
+  padding: 1rem;
+  .contenedor-imagenes {
+    position: relative;
+    box-shadow: 5px 10px 8px #888888;
+    .imagenes--img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      position: absolute;
+     
+      transform: translate(0px, 0px) scale(1);
+      transition: all 500ms ease-in-out;
+      &:hover {
+        filter: brightness(90%);
+        transition: all 1s;
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -ms-transition: all 1s;
+        -o-transition: all 1s;
+        transform: translate(-50px, -50px) scale(0.5);
+        
+
+      }
+    }
+
+    .img--link {
+      color: rgb(243, 168, 77);
+      display: block;
+      font-size: 20px;
+      font-family: $fontTexto;
+      height: 50%;
+      text-decoration: none;
+      top: 70%;
+      right: 0;
+      padding-right: 5px;
+      position: absolute;
+      z-index: -1;
+    }
+  }
+}
+@media screen and(min-width: 460px){
+
+  .imagenes-grid{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 300px 300px;
+  }
+}
+
+@media screen and(min-width: 680px){
+
+  .imagenes-grid{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 380px 380px;
+  }
+}
+
+@media screen and(min-width: 880px){
+
+  .imagenes-grid{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 400px 400px;
+  }
+}
+
+@media screen and(min-width: 990px){
+
+  .imagenes-grid{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 350px;
+  }
+}
+
+//media querys----------------------------------------------
+
